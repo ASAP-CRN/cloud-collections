@@ -1,5 +1,8 @@
 # asap-crn-could-collections
-Source-of-truth for ASAP CRN Cloud _collections_
+Mechanics and archive for maintaining ASAP CRN Cloud _collections_
+- DOIs
+- version definitions
+- curated buckets for VWB interface.
 
 **Collections** are sets of ASAP CRN Cloud datasets of a common _kind_.  Collections can be either of _kinds_ which have an ASAP CRN analysis workflow which include ASAP CRN curated analysis artifacts _in addition_ to the team contributed analysis artifacts.  "Other" datasets are simply artifacts which are platformed with just the team contributed artifacts.  
 
