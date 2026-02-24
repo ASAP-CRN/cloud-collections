@@ -7,59 +7,50 @@ import pandas as pd
 from pathlib import Path
 import os, sys
 
-from crn_utils.util import (
-    read_CDE,
-    NULL,
-    prep_table,
-    read_meta_table,
-    read_CDE_asap_ids,
-    export_meta_tables,
-    load_tables,
-    write_version,
-)
-
-from crn_utils.asap_ids import *
-from crn_utils.validate import validate_table, ReportCollector, process_table
-
-from crn_utils.bucket_util import gcloud_ls, gcloud_ls_long
-
-from crn_utils.constants import *
-from crn_utils.doi import *
+import subprocess
 
 %load_ext autoreload
 %autoreload 2
 
-# %%
-repo_root = Path.cwd().parents[1]
-datasets_path = repo_root / "datasets"
+
+PROJECT="dnastack-asap-parkinsons"
+REGION="us-central1"
+
+
 
 # %%
 # HELPER FUNCTIONS
 
-import subprocess
-PROJECT="dnastack-asap-parkinsons"
-REGION="us-central1"
+def set_gcloud_config()->bool:
+    cmd = f"gcloud config set storage/parallel_composite_upload_enabled False "
 
-def gcloud_bucket_exists(bucket_name:str) -> bool:
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+    if result.returncode == 0:
+        return True
+    else
+        return False
+
+
+
+def gcloud_bucket_exists(bucket_uri:str) -> bool:
     """
     checks for the existance of a bucket
     """    
-    cmd = f"gcloud storage buckets describe gs://{bucket_name}  --billing-project={PROJECT} "
+    cmd = f"gcloud storage buckets describe {bucket_uri}  --billing-project={PROJECT} "
 
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     found = False
     if result.returncode == 0:
         found = True
-        print(f"Bucket {bucket_name} found")
+        print(f"Bucket {bucket_uri} found")
 
     return found
 
-bucket_exists = gcloud_bucket_exists("asap-raw-team-voet-pmdbs-sn-multimodal-parsebio")
 
 # %%
 
 
-def gcloud_create_bucket(bucket_name:str):
+def gcloud_create_bucket(bucket_uri:str):
     """
     creates a bucket
     """
@@ -72,15 +63,15 @@ def gcloud_create_bucket(bucket_name:str):
     #     print(f"Bucket {bucket_name} does not exist, creating now")
 
     # Create a bucket in us-central1
-    cmd1 = f"""gcloud storage buckets create "gs://{bucket_name}" --project="{PROJECT}" --location="{REGION}" """
+    cmd1 = f"""gcloud storage buckets create "{bucket_uri}" --project="{PROJECT}" --location="{REGION}" """
 
     print(cmd1)
     # Add permissions to bucket
-    cmd2 = f"""gcloud storage buckets add-iam-policy-binding "gs://{bucket_name}" \
+    cmd2 = f"""gcloud storage buckets add-iam-policy-binding "{bucket_uri}" \
     --member="group:asap-cloud-readers@verily-bvdp.com" \
     --role="roles/storage.objectViewer" \
     --project="{PROJECT}" """
-    cmd3 = f"""gcloud storage buckets add-iam-policy-binding "gs://{bucket_name}" \
+    cmd3 = f"""gcloud storage buckets add-iam-policy-binding "{bucket_uri}" \
     --member="group:asap-dti@dnastack.com" \
     --role="roles/storage.Admin" \
     --project="{PROJECT}" """
@@ -98,21 +89,20 @@ def gcloud_create_bucket(bucket_name:str):
 
     result = subprocess.run(cmd2, shell=True, capture_output=True, text=True)
     if result.returncode == 0:
-        print(f"Step 2: Bucket {bucket_name} add-iam-policy-binding 1 applied")
+        print(f"Step 2: Bucket {bucket_uri} add-iam-policy-binding 1 applied")
     else:
-        print(f"Step 2: Bucket {bucket_name} add-iam-policy-binding 1 apply failed")
+        print(f"Step 2: Bucket {bucket_uri} add-iam-policy-binding 1 apply failed")
         return result
 
     result = subprocess.run(cmd3, shell=True, capture_output=True, text=True)
     if result.returncode == 0:
-        print(f"Step 3: Bucket {bucket_name} add-iam-policy-binding 2 applied")
+        print(f"Step 3: Bucket {bucket_uri} add-iam-policy-binding 2 applied")
     else:
-        print(f"Step 3: Bucket {bucket_name} add-iam-policy-binding 2 apply  failed")
+        print(f"Step 3: Bucket {bucket_uri} add-iam-policy-binding 2 apply  failed")
         return result
 
-    print(f"FINAL: Bucket {bucket_name} created and configured")
+    print(f"FINAL: Bucket {bucket_uri} created and configured")
     return True
-
 
 
 # %%
@@ -120,8 +110,8 @@ def gcloud_copy_file(source_uri:str, destination_uri:str) -> bool:
     """
     copies a file
     """
+    set_gcloud_config()
 
-    project = "dnastack-asap-parkinsons"
     cmd = f"gcloud storage rsync --billing-project={PROJECT} {source_uri} {destination_uri}"
     print(cmd)
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
@@ -156,44 +146,88 @@ def gcloud_copy_path(source_path:str, destination_path:str) -> bool:
         return False
 
 
+
+# %%
+repo_root = Path.cwd().parents[1]
+datasets_path = repo_root / "datasets"
+
+
+test_collection = "pmdbs-sc-rnaseq"
+collection_version = "v1"
+
+latest_release = "v4.0.0"
+# %%
+bucket_name = f"asap-crn-{test_collection}-collection-{collection_version}"
+
+collection_datasets = [
+    "asap-curated-cohort-pmdbs-sc-rnaseq", 
+    "asap-curated-team-hafler-pmdbs-sn-rnaseq-pfc", 
+    "asap-curated-team-lee-pmdbs-sn-rnaseq", 
+    "asap-curated-team-jakobsson-pmdbs-sn-rnaseq", 
+    "asap-curated-team-scherzer-pmdbs-sn-rnaseq-mtg", 
+    "asap-curated-team-hardy-pmdbs-sn-rnaseq", 
+]
+
 # %%
 
 
+collection_bucket = f"gs://{bucket_name}"
+if not gcloud_bucket_exists(collection_bucket):
+    result = gcloud_create_bucket(destination_bucket)
+    if result != True:
+        print(f"ERROR: Bucket {destination_bucket} not created")
+        print(f"  result: {result.stdout}")
+        print(f"  returncode: {result.returncode}")
+
+# if not gcloud_bucket_exists(destination_bucket):
+#     gcloud_create_bucket(destination_bucket)
+
+workflow_name = "pmdbs_sc_rnaseq"
 # %%
-# %%
-for idx, ds_name in enumerate(datasets):
+for idx, ds_name in enumerate(collection_datasets):
     print(f"Processing {ds_name}")
-    rows = export_plan[export_plan["ds_name"] == ds_name]
-    dtype = datasets[idx]
-    og_ds_name = rows["og_ds_name"].values[0]
 
-    # check that the bucket we want exists
-    source_bucket = f"asap-raw-team-{og_ds_name}"
-    destination_bucket = f"asap-raw-team-{ds_name}"
+    source_bucket = f"gs://{ds_name}"
+    
 
-    if not gcloud_bucket_exists(destination_bucket):
-        result = gcloud_create_bucket(destination_bucket)
-        if result != True:
-            print(f"ERROR: Bucket {destination_bucket} not created")
-            print(f"  result: {result.stdout}")
-            print(f"  returncode: {result.returncode}")
-            break
+    # copy artifacts
+    
+    source_uri = f"{source_bucket}/artifacts"
+    destination_uri = f"{collection_bucket}/{ds_name}/artifacts"
+    if not gcloud_copy_path(source_uri, destination_uri):
+        print("ERROR copying artifacts for {ds_name}")
 
-# %%
-for idx, ds_name in enumerate(datasets):
-    print(f"Processing {ds_name}")
-    rows = export_plan[export_plan["ds_name"] == ds_name]
-    dtype = datasets[idx]
-    og_ds_name = rows["og_ds_name"].values[0]
+    # copy file_metadata
+    source_uri = f"{source_bucket}/file_metadata"
+    destination_uri = f"{collection_bucket}/{ds_name}/file_metadata"
+    if not gcloud_copy_path(source_uri, destination_uri):
+        print("ERROR copying file_metadata for {ds_name}")
 
-    # check that the bucket we want exists
-    source_bucket = f"asap-raw-team-{og_ds_name}"
-    destination_bucket = f"asap-raw-team-{ds_name}"
 
-    if not gcloud_bucket_exists(destination_bucket):
-        gcloud_create_bucket(destination_bucket)
+    # copy metadata
+    source_uri = f"{source_bucket}/metadata"
+    destination_uri = f"{collection_bucket}/{ds_name}/metadata"
+    if not gcloud_copy_path(source_uri, destination_uri):
+        print("ERROR copying metadata for {ds_name}")
+    # copy the current release to metadata/?
 
-    # copy each file
+
+    # copy curated data
+    # preprocess
+    source_uri = f"{source_bucket}/{workflow_name}/preprocess/"
+    destination_uri = f"{collection_bucket}/{ds_name}/{workflow_name}/preprocess/"
+    if not gcloud_copy_path(source_uri, destination_uri):
+        print("ERROR copying preprocess artifacts for {ds_name}")
+    # cohort_analysis
+    source_uri = f"{source_bucket}/{workflow_name}/cohort_analysis/"
+    destination_uri = f"{collection_bucket}/{ds_name}/{workflow_name}/cohort_analysis/"
+    if not gcloud_copy_path(source_uri, destination_uri):
+        print("ERROR copying cohort_analysis artifacts for {ds_name}")
+
+
+
+
+
     copied_files = []
     failed_files = []
     for i, row in rows.iterrows():
