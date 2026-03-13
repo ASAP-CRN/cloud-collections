@@ -1,0 +1,38 @@
+{
+  "general": {
+    "release_version": "v4.0.1",
+    "cde_version": "v4.1",
+    "release_doi": "https://doi.org/10.5281/zenodo.8384742",
+    "google_datasets_sheet_id": "13ma58D_TbW8eHbzWDb0hwXD1daNk8HWZ7_4Z0gnCETw",
+    "dataset_names": [
+      "liddle-human-colon-spatial-cosmx-rna-1000p",
+      "lee-mouse-sn-rnaseq-midbrain-g2019s-hf-diet",
+      "lee-mouse-liver-bulk-rnaseq-g2019s",
+      "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet",
+      "schapira-fecal-metagenome-human-baseline",
+      "liddle-human-colon-spatial-cosmx-protein-64p"
+    ],
+    "dataset_names_excluded": [
+      {
+        "None": "None"
+      }
+    ],
+    "workflows": [
+      "No_workflows"
+    ]
+  },
+  "publisher_card_figures": {
+    "figures_google_snapshot": "latest",
+    "plot_classes": [
+      "age-at-collection",
+      "brain-region",
+      "condition-id",
+      "pd-status",
+      "sex"
+    ],
+    "n_cols": 2
+  },
+  "publisher_card_text": {
+    "out_text_formats": ["md","html"]
+  }
+}

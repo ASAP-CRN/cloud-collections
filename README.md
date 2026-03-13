@@ -1,8 +1,12 @@
-# asap-crn-could-collections
-Mechanics and archive for maintaining ASAP CRN Cloud _collections_
-- DOIs
-- version definitions
-- curated buckets for VWB interface.
+# asap-crn-could-collections (pending: -> c`loud-collections` or `asap-crn-cloud-versioned-collections`)
+
+Mechanics and archive for maintaining versioned ASAP CRN Cloud entities:
+_Datasets_, _Collections_, and _Releases_
+    - DOIs
+    - version definitions
+    - curated buckets for VWB interface.
+
+Also contains code tools for maintanence and composition.
 
 **Collections** are sets of ASAP CRN Cloud datasets of a common _kind_.  Collections can be either of _kinds_ which have an ASAP CRN analysis workflow which include ASAP CRN curated analysis artifacts _in addition_ to the team contributed analysis artifacts.  "Other" datasets are simply artifacts which are platformed with just the team contributed artifacts.  
 
@@ -14,12 +18,37 @@ Un-curated "Other" datasets are exposed in un-versioned Data Collections which r
 ## all collections summary
 Coming Soon
 
+
+## datasets
+<dataset-name>/
+  archive/
+  doi/
+  membership.json
+  release.json
+
+
 ## collections
 <collection-name>/
   datasets/<datset-name>
+  archive/
+  doi/
+  collection.json
+  release.json
 
 
-### Bucket Structure (Example)
+## releases
+releases/
+    current.json
+    <release-version>/
+        datsets.json
+        doi/
+        collection.json
+        release.json
+
+
+
+
+### Curated Collection Bucket Structure (Example)
 asap-crn-pmdbs-sc-rnaseq-collection-v3/
     ├── hafler-pmdbs-sn-rnaseq-pfc
     │    ├── artifacts/
