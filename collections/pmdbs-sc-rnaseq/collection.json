@@ -1,0 +1,125 @@
+{
+  "name": "pmdbs-sc-rnaseq",
+  "title": "PMDBS scRNAseq",
+  "types": [
+    "pmdbs-sc-rnaseq"
+  ],
+  "versions": {
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "date": null,
+      "doi": null,
+      "datasets": [
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "cohort-pmdbs-sc-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hafler",
+        "jakobsson",
+        "lee",
+        "scherzer"
+      ],
+      "types": [
+        "pmdbs-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v1.0.0",
+        "cde_version": "v2.1",
+        "date": null
+      }
+    },
+    "v2.0.0": {
+      "version": "v2.0.0",
+      "date": null,
+      "doi": null,
+      "datasets": [
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "hardy-pmdbs-sn-rnaseq",
+        "cohort-pmdbs-sc-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hafler",
+        "hardy",
+        "jakobsson",
+        "lee",
+        "scherzer"
+      ],
+      "types": [
+        "pmdbs-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v2.0.3",
+        "cde_version": "v3.0",
+        "date": null
+      }
+    },
+    "v3.0.0": {
+      "version": "v3.0.0",
+      "date": null,
+      "doi": null,
+      "datasets": [
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "hardy-pmdbs-sn-rnaseq",
+        "cohort-pmdbs-sc-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hafler",
+        "hardy",
+        "jakobsson",
+        "lee",
+        "scherzer"
+      ],
+      "types": [
+        "pmdbs-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v3.0.2",
+        "cde_version": "v3.2",
+        "date": null
+      }
+    },
+    "v3.1.0": {
+      "version": "v3.1.0",
+      "date": null,
+      "doi": null,
+      "datasets": [
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "hardy-pmdbs-sn-rnaseq",
+        "cohort-pmdbs-sc-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "sulzer-pmdbs-sn-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hafler",
+        "hardy",
+        "jakobsson",
+        "lee",
+        "scherzer",
+        "sulzer"
+      ],
+      "types": [
+        "pmdbs-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": null
+      }
+    }
+  }
+}

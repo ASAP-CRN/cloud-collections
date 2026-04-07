@@ -1,0 +1,85 @@
+{
+  "mouse-sc-rnaseq": {
+    "name": "mouse-sc-rnaseq",
+    "title": "Mouse scRNAseq",
+    "version": "v1.0.0",
+    "doi": null,
+    "datasets": [
+      "biederer-mouse-sc-rnaseq",
+      "cragg-mouse-sn-rnaseq-striatum",
+      "cohort-mouse-sc-rnaseq"
+    ],
+    "release": {
+      "version": "v4.0.0",
+      "cde_version": "v3.3",
+      "date": null
+    }
+  },
+  "mouse-spatial": {
+    "name": "mouse-spatial",
+    "title": "Mouse Spatial RNAseq",
+    "version": "v1.0.0",
+    "doi": null,
+    "datasets": [
+      "cragg-mouse-spatial-visium-striatum"
+    ],
+    "release": {
+      "version": "v4.0.0",
+      "cde_version": "v3.3",
+      "date": null
+    }
+  },
+  "pmdbs-bulk-rnaseq": {
+    "name": "pmdbs-bulk-rnaseq",
+    "title": "PMDBS bulkRNAseq",
+    "version": "v1.2.0",
+    "doi": null,
+    "datasets": [
+      "hardy-pmdbs-bulk-rnaseq",
+      "lee-pmdbs-bulk-rnaseq-mfg",
+      "wood-pmdbs-bulk-rnaseq",
+      "cohort-pmdbs-bulk-rnaseq",
+      "jakobsson-pmdbs-bulk-rnaseq"
+    ],
+    "release": {
+      "version": "v4.0.0",
+      "cde_version": "v3.3",
+      "date": null
+    }
+  },
+  "pmdbs-sc-rnaseq": {
+    "name": "pmdbs-sc-rnaseq",
+    "title": "PMDBS scRNAseq",
+    "version": "v3.1.0",
+    "doi": null,
+    "datasets": [
+      "hafler-pmdbs-sn-rnaseq-pfc",
+      "lee-pmdbs-sn-rnaseq",
+      "scherzer-pmdbs-sn-rnaseq-mtg",
+      "hardy-pmdbs-sn-rnaseq",
+      "cohort-pmdbs-sc-rnaseq",
+      "jakobsson-pmdbs-sn-rnaseq",
+      "sulzer-pmdbs-sn-rnaseq"
+    ],
+    "release": {
+      "version": "v4.0.0",
+      "cde_version": "v3.3",
+      "date": null
+    }
+  },
+  "pmdbs-spatial": {
+    "name": "pmdbs-spatial",
+    "title": "PMDBS Spatial RNAseq",
+    "version": "v1.1.0",
+    "doi": null,
+    "datasets": [
+      "edwards-pmdbs-spatial-geomx-th",
+      "scherzer-pmdbs-spatial-visium-mtg"
+    ],
+    "release": {
+      "version": "v4.0.0",
+      "cde_version": "v3.3",
+      "date": null
+    }
+  }
+}
