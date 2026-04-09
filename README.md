@@ -1,118 +1,74 @@
-# asap-crn-could-collections
-Mechanics and archive for maintaining ASAP CRN Cloud _collections_
-- DOIs
-- version definitions
-- curated buckets for VWB interface.
+# cloud-collections
 
-**Collections** are sets of ASAP CRN Cloud datasets of a common _kind_.  Collections can be either of _kinds_ which have an ASAP CRN analysis workflow which include ASAP CRN curated analysis artifacts _in addition_ to the team contributed analysis artifacts.  "Other" datasets are simply artifacts which are platformed with just the team contributed artifacts.  
+Source-of-truth archive for ASAP CRN Cloud _Collections_. A collection is a versioned, DOI-backed grouping of datasets sharing a common tissue type and assay modality. Collections are published as immutable VWB Data Collections with version-specific GCS buckets for curated data access.
 
-Currenly, as of the v4.0 release, there are 5 versioned CRN Cloud Collections: the "PMDBS scRNAseq Collection", "PMDBS bulkRNAseq Collection", "PMDBS Spatial Transcriptomics Collection", "Mouse Spatial Transcriptomics Collection", and "Mouse scRNAseq Collection".  Datasets from these collections are exposed in VWB workbench in versioned "Data Collections" which have imutable copies of the _curated_ in gcp buckets unique to them.   The individual Dataset curated buckets are mutable and contain the curated data artifacts of workflow outputs for all released versions.   
+This repository is automatically managed by the [cloud-orchestration](https://github.com/ASAP-CRN/cloud-orchestration) system. Manual changes should be avoided.
 
-Un-curated "Other" datasets are exposed in un-versioned Data Collections which reference each Datasets curated buckets.   
+## Collections (as of v4.0.0)
 
+| Collection | Name | Description |
+|---|---|---|
+| `pmdbs-sc-rnaseq` | PMDBS scRNAseq | Post-mortem donor brain single-cell/single-nucleus RNA-seq |
+| `pmdbs-bulk-rnaseq` | PMDBS bulkRNAseq | Post-mortem donor brain bulk RNA-seq |
+| `pmdbs-spatial` | PMDBS Spatial Transcriptomics | Post-mortem donor brain spatial transcriptomics |
+| `mouse-sc-rnaseq` | Mouse scRNAseq | Mouse single-cell/single-nucleus RNA-seq |
+| `mouse-spatial` | Mouse Spatial Transcriptomics | Mouse spatial transcriptomics |
 
-## all collections summary
-- PMDBS
-    - sc RNAseq
-    - bulk RNAseq
-    - spatial RNAseq
-
-- Mouse
-    - sc RNAseq
-    - spatial RNAseq
-
+Collections with an ASAP CRN analysis workflow include CRN-curated analysis artifacts in addition to team-contributed artifacts. "Other" (uncurated) datasets are exposed via unversioned Data Collections that reference each dataset's curated bucket directly.
 
 ## Structure
 
-- `collections.json`: JSON index containing all collections with their DOIs and references
-- `collections/<collection_name>/`: Individual collection directories
-  - version: current version of the dataset
-  - `collection.json`: Collection metadata including title, description, DOI, version, and list of datasets
-  - 'collection.doi': all versions reference 
-  - 'collection_version.doi': current versions reference 
-  - '<collection_name>_README.md' (optional)
-  - '<collection_name>_README.pdf'
-  - 'scripts/' sub directory which contains any scripts related to the most current version of the collection
-  - 'archive/' sub directory which contains all files from all      - 'version.doi': current versions reference 
- versions of the collection
-    - '<version>' sub directory which contains all files from all  versions of the collection
-      - 'collection_version.doi': current versions reference 
-      - `collection.json`: Collection metadata including title, description, DOI, version, and list of datasets
-
-
-
+```
+collections.json                           # Master index of all collections
+collections/<collection-name>/
+├── collection.json                        # Canonical metadata (see schema below)
+├── scripts/                               # Scripts for current version
+└── archive/                               # Immutable snapshots of past versions
+    └── <version>/
+        └── collection.json                # Version-specific metadata snapshot
+```
 
 ## Collection Metadata Schema
+
 ```json
 {
- {
-  "name": "pmdbs-bulk-rnaseq",
-  "title": "PMDBS bulkRNAseq",
-  "types": [
-    "pmdbs-bulk-rnaseq"
-  ],
+  "name": "pmdbs-sc-rnaseq",
+  "title": "PMDBS scRNAseq",
+  "types": ["pmdbs-sc-rnaseq"],
   "versions": {
-    "v1.0.0" : {
-      "doi": null,
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "doi": "10.5281/zenodo.xxxxxxx",
       "datasets": [
-        "hardy-pmdbs-bulk-rnaseq",
-        "lee-pmdbs-bulk-rnaseq-mfg",
-        "wood-pmdbs-bulk-rnaseq",
-        "cohort-pmdbs-bulk-rnaseq"
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "cohort-pmdbs-sc-rnaseq"
       ],
-      "teams": [
-        "cohort",
-        "hardy",
-        "jakobsson",
-        "lee",
-        "wood"
-      ],
+      "teams": ["cohort", "hafler", "jakobsson", "lee", "scherzer"],
       "release": {
         "version": "v1.0.0",
-        "cde_version" : "v3.0",
-        "date": null
-      },
-    },
-    "v1.1.0" : {
-      "doi": null,
-      "datasets": [
-        "hardy-pmdbs-bulk-rnaseq",
-        "lee-pmdbs-bulk-rnaseq-mfg",
-        "wood-pmdbs-bulk-rnaseq",
-        "cohort-pmdbs-bulk-rnaseq",
-      ],
-      "teams": [
-        "cohort",
-        "hardy",
-        "jakobsson",
-        "lee",
-        "wood"
-      ],
-      "release": {
-        "version": "v1.1.0",
-        "cde_version" : "v3.2",
+        "cde_version": "v2.1",
         "date": null
       }
     },
-    "v1.2.0" : {
-      "doi": null,
+    "v3.1.0": {
+      "version": "v3.1.0",
+      "doi": "10.5281/zenodo.xxxxxxx",
       "datasets": [
-        "hardy-pmdbs-bulk-rnaseq",
-        "lee-pmdbs-bulk-rnaseq-mfg",
-        "wood-pmdbs-bulk-rnaseq",
-        "cohort-pmdbs-bulk-rnaseq",
-        "jakobsson-pmdbs-bulk-rnaseq"
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "hardy-pmdbs-sn-rnaseq",
+        "sulzer-pmdbs-sn-rnaseq",
+        "cohort-pmdbs-sc-rnaseq"
       ],
-      "teams": [
-        "cohort",
-        "hardy",
-        "jakobsson",
-        "lee",
-        "wood"
-      ],
+      "teams": ["cohort", "hafler", "hardy", "jakobsson", "lee", "scherzer", "sulzer"],
       "release": {
-        "version": "v1.2.0",
-        "cde_version" : "v3.3",
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
         "date": null
       }
     }
@@ -120,50 +76,50 @@ Un-curated "Other" datasets are exposed in un-versioned Data Collections which r
 }
 ```
 
+### Key Fields
 
+- **`versions`**: Map of collection version → snapshot of datasets, teams, and the release/CDE version it was published with
+- **`datasets`**: All datasets included in this collection version
+- **`release.cde_version`**: The Common Data Elements schema applied to all datasets in this collection version
 
-## collections
-<collection-name>/
-  datasets/<datset-name>
+## Versioning Scheme
 
+Collection versions follow `vMAJOR.MINOR.PATCH` and are updated when:
 
-### Bucket Structure (Example)
-asap-crn-pmdbs-sc-rnaseq-collection-v3/
-    ├── hafler-pmdbs-sn-rnaseq-pfc
-    │    ├── artifacts/
-    │    ├── file_metadata/
-    │    ├── metadata/
-    │    │   ├── *.csv
-    │    │   └── cde_version
-    │    └── <workflow_name>/
-    │        ├── <curated_outputs>/
-    │        └── workflow_version
-    ├── lee-pmdbs-sn-rnaseq
-    ├── hardy-pmdbs-sn-rnaseq
-    ├── scherzer-pmdbs-sn-rnaseq-mtg
-    ├── jakobsson-pmdbs-sn-rnaseq
-    ├── sulzer-pmdbs-sn-rnaseq
-    └── asap-cohort-pmdbs-sc-rnaseq
+- **Minor/Major** — datasets are added or curation workflows are updated (regenerating curated data)
+- **Patch** — metadata corrections or DOI updates
 
-### Curated Bucket Pathing
-<curated-bucket>/
-    ├── artifacts/
-    ├── <raw_data>/
-    ├── file_metadata/
-    ├── metadata/
-    │   └── release/<release_version>/*.csv, cde_version
-    └── <workflow_name>/
-        └── release/<release_version>/
-            ├── <curated_outputs>/
-            └── workflow_version
+Each collection version also tracks the associated **Release Version**, **CDE Version**, and per-dataset **Dataset Version**.
 
+## VWB Data Collections and GCS Bucket Structure
 
+Each versioned collection is exposed in VWB as a Data Collection backed by an **immutable** versioned GCS bucket:
 
-## versions
-Collections versions are updated with Minor and Major releases when additional datasets are added, or the curation workflows are updated and curated data is modified.
+```
+gs://asap-crn-<collection-name>-collection-<version>/
+├── <dataset-name>/
+│   ├── artifacts/
+│   ├── file_metadata/
+│   ├── metadata/
+│   │   ├── *.csv
+│   │   └── cde_version
+│   └── <workflow_name>/
+│       ├── <curated_outputs>/
+│       └── workflow_version
+└── ...
+```
 
-- Release Version
-- workflow Version
-- Dataset Version
-- CDE Version
+Individual dataset curated buckets (`gs://asap-curated-<dataset-name>/`) are **mutable** and hold outputs for all released versions organized under `release/<release_version>/`. Collection buckets hold the frozen snapshot for a specific collection version.
 
+## Release Process
+
+1. Datasets are scoped and associated with the release
+2. Collection versions are bumped to include new/updated datasets
+3. DOIs are generated via Zenodo for new collection versions
+4. `collections.json` index and per-collection `collection.json` are updated
+5. Version snapshots are written to `archive/`
+6. VWB Data Collections are provisioned with the new versioned GCS bucket
+
+## Management
+
+For collection submissions or updates, use the orchestration system or contact the ASAP CRN team.
