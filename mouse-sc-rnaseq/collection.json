@@ -1,0 +1,33 @@
+{
+  "name": "mouse-sc-rnaseq",
+  "title": "Mouse scRNAseq",
+  "collection_doi": "10.5281/zenodo.17860974",
+  "types": [
+    "mouse-sc-rnaseq"
+  ],
+  "versions": {
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "date": "2025-12-15",
+      "doi": "10.5281/zenodo.17860975",
+      "datasets": [
+        "biederer-mouse-sc-rnaseq",
+        "cragg-mouse-sn-rnaseq-striatum",
+        "cohort-mouse-sc-rnaseq"
+      ],
+      "teams": [
+        "biederer",
+        "cohort",
+        "cragg"
+      ],
+      "types": [
+        "mouse-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-12-15"
+      }
+    }
+  }
+}

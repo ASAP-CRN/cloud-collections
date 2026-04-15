@@ -1,0 +1,29 @@
+{
+  "name": "mouse-spatial",
+  "title": "Mouse Spatial RNAseq",
+  "collection_doi": "10.5281/zenodo.16979296",
+  "types": [
+    "mouse-spatial"
+  ],
+  "versions": {
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "date": "2025-09-30",
+      "doi": "10.5281/zenodo.16979297",
+      "datasets": [
+        "cragg-mouse-spatial-visium-striatum"
+      ],
+      "teams": [
+        "cragg"
+      ],
+      "types": [
+        "mouse-spatial"
+      ],
+      "release": {
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-09-30"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "pmdbs-spatial",
+  "title": "PMDBS Spatial RNAseq",
+  "collection_doi": "10.5281/zenodo.16979474",
+  "types": [
+    "pmdbs-spatial"
+  ],
+  "versions": {
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "date": "2025-09-30",
+      "doi": "10.5281/zenodo.16979475",
+      "datasets": [
+        "edwards-pmdbs-spatial-geomx-th"
+      ],
+      "teams": [
+        "edwards"
+      ],
+      "types": [
+        "pmdbs-spatial"
+      ],
+      "release": {
+        "version": "v3.0.2",
+        "cde_version": "v3.2",
+        "date": "2025-09-30"
+      }
+    },
+    "v1.1.0": {
+      "version": "v1.1.0",
+      "date": "2025-12-15",
+      "doi": "10.5281/zenodo.17860901",
+      "datasets": [
+        "edwards-pmdbs-spatial-geomx-th",
+        "scherzer-pmdbs-spatial-visium-mtg"
+      ],
+      "teams": [
+        "edwards",
+        "scherzer"
+      ],
+      "types": [
+        "pmdbs-spatial"
+      ],
+      "release": {
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-12-15"
+      }
+    }
+  }
+}

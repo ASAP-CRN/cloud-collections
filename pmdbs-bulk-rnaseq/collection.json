@@ -1,0 +1,87 @@
+{
+  "name": "pmdbs-bulk-rnaseq",
+  "title": "PMDBS bulkRNAseq",
+  "collection_doi": "10.5281/zenodo.14373343",
+  "types": [
+    "pmdbs-bulk-rnaseq"
+  ],
+  "versions": {
+    "v1.0.0": {
+      "version": "v1.0.0",
+      "date": "2024-09-11",
+      "doi": "10.5281/zenodo.14373344",
+      "datasets": [
+        "hardy-pmdbs-bulk-rnaseq",
+        "lee-pmdbs-bulk-rnaseq-mfg",
+        "wood-pmdbs-bulk-rnaseq",
+        "cohort-pmdbs-bulk-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hardy",
+        "lee",
+        "wood"
+      ],
+      "types": [
+        "pmdbs-bulk-rnaseq"
+      ],
+      "release": {
+        "version": "v2.0.3",
+        "cde_version": "v3.0",
+        "date": "2024-09-11"
+      }
+    },
+    "v1.1.0": {
+      "version": "v1.1.0",
+      "date": "2025-09-30",
+      "doi": "10.5281/zenodo.16975686",
+      "datasets": [
+        "hardy-pmdbs-bulk-rnaseq",
+        "lee-pmdbs-bulk-rnaseq-mfg",
+        "wood-pmdbs-bulk-rnaseq",
+        "cohort-pmdbs-bulk-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hardy",
+        "lee",
+        "wood"
+      ],
+      "types": [
+        "pmdbs-bulk-rnaseq"
+      ],
+      "release": {
+        "version": "v3.0.2",
+        "cde_version": "v3.2",
+        "date": "2025-09-30"
+      }
+    },
+    "v1.2.0": {
+      "version": "v1.2.0",
+      "date": "2025-12-15",
+      "doi": "10.5281/zenodo.17860841",
+      "datasets": [
+        "hardy-pmdbs-bulk-rnaseq",
+        "lee-pmdbs-bulk-rnaseq-mfg",
+        "wood-pmdbs-bulk-rnaseq",
+        "cohort-pmdbs-bulk-rnaseq",
+        "jakobsson-pmdbs-bulk-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hardy",
+        "jakobsson",
+        "lee",
+        "wood"
+      ],
+      "types": [
+        "pmdbs-bulk-rnaseq"
+      ],
+      "release": {
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-12-15"
+      }
+    }
+  }
+}

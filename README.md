@@ -20,60 +20,18 @@ Collections with an ASAP CRN analysis workflow include CRN-curated analysis arti
 
 ```
 collections.json                           # Master index of all collections
-collections/<collection-name>/
+<collection-name>/
 ├── collection.json                        # Canonical metadata (see schema below)
-├── scripts/                               # Scripts for current version
 └── archive/                               # Immutable snapshots of past versions
     └── <version>/
+        ├── * README.pdf                   # collection version README 
         └── collection.json                # Version-specific metadata snapshot
 ```
 
 ## Collection Metadata Schema
 
 ```json
-{
-  "name": "pmdbs-sc-rnaseq",
-  "title": "PMDBS scRNAseq",
-  "types": ["pmdbs-sc-rnaseq"],
-  "versions": {
-    "v1.0.0": {
-      "version": "v1.0.0",
-      "doi": "10.5281/zenodo.xxxxxxx",
-      "datasets": [
-        "hafler-pmdbs-sn-rnaseq-pfc",
-        "lee-pmdbs-sn-rnaseq",
-        "jakobsson-pmdbs-sn-rnaseq",
-        "scherzer-pmdbs-sn-rnaseq-mtg",
-        "cohort-pmdbs-sc-rnaseq"
-      ],
-      "teams": ["cohort", "hafler", "jakobsson", "lee", "scherzer"],
-      "release": {
-        "version": "v1.0.0",
-        "cde_version": "v2.1",
-        "date": null
-      }
-    },
-    "v3.1.0": {
-      "version": "v3.1.0",
-      "doi": "10.5281/zenodo.xxxxxxx",
-      "datasets": [
-        "hafler-pmdbs-sn-rnaseq-pfc",
-        "lee-pmdbs-sn-rnaseq",
-        "jakobsson-pmdbs-sn-rnaseq",
-        "scherzer-pmdbs-sn-rnaseq-mtg",
-        "hardy-pmdbs-sn-rnaseq",
-        "sulzer-pmdbs-sn-rnaseq",
-        "cohort-pmdbs-sc-rnaseq"
-      ],
-      "teams": ["cohort", "hafler", "hardy", "jakobsson", "lee", "scherzer", "sulzer"],
-      "release": {
-        "version": "v4.0.0",
-        "cde_version": "v3.3",
-        "date": null
-      }
-    }
-  }
-}
+
 ```
 
 ### Key Fields
