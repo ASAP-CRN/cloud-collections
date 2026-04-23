@@ -36,10 +36,6 @@ collections.json                           # Master index of all collections
 
 ### Key Fields
 
-- **`versions`**: Map of collection version → snapshot of datasets, teams, and the release/CDE version it was published with
-- **`datasets`**: All datasets included in this collection version
-- **`release.cde_version`**: The Common Data Elements schema applied to all datasets in this collection version
-
 ## Versioning Scheme
 
 Collection versions follow `vMAJOR.MINOR.PATCH` and are updated when:
@@ -73,7 +69,7 @@ Individual dataset curated buckets (`gs://asap-curated-<dataset-name>/`) are **m
 
 1. Datasets are scoped and associated with the release
 2. Collection versions are bumped to include new/updated datasets
-3. DOIs are generated via Zenodo for new collection versions
+3. DOIs are generated via Zenodo for new collection versions. Caveat: for now these dois are generated outside this context, and the doi references will be shared via release level scripts.
 4. `collections.json` index and per-collection `collection.json` are updated
 5. Version snapshots are written to `archive/`
 6. VWB Data Collections are provisioned with the new versioned GCS bucket
