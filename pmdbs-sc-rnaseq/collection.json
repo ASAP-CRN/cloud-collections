@@ -121,6 +121,37 @@
         "cde_version": "v3.3",
         "date": "2025-12-15"
       }
+    },
+    "v3.1.1": {
+      "version": "v3.1.1",
+      "date": "2025-04-30",
+      "doi": "10.5281/zenodo.19876217",
+      "datasets": [
+        "hafler-pmdbs-sn-rnaseq-pfc",
+        "lee-pmdbs-sn-rnaseq",
+        "scherzer-pmdbs-sn-rnaseq-mtg",
+        "hardy-pmdbs-sn-rnaseq",
+        "cohort-pmdbs-sc-rnaseq",
+        "jakobsson-pmdbs-sn-rnaseq",
+        "sulzer-pmdbs-sn-rnaseq"
+      ],
+      "teams": [
+        "cohort",
+        "hafler",
+        "hardy",
+        "jakobsson",
+        "lee",
+        "scherzer",
+        "sulzer"
+      ],
+      "types": [
+        "pmdbs-sc-rnaseq"
+      ],
+      "release": {
+        "version": "v4.1.0",
+        "cde_version": "v3.3",
+        "date": "2025-04-30"
+      }
     }
   }
 }
