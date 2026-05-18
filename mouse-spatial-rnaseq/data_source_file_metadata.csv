@@ -1,0 +1,2 @@
+,dataset,source_url,dest_url
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/file_metadata/release/v4.0.0,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/file_metadata

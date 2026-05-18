@@ -1,0 +1,5 @@
+,dataset,source_url,dest_url
+0,sulzer-pmdbs-sn-rnaseq,gs://asap-curated-team-sulzer-pmdbs-sn-rnaseq/artifacts,gs://asap-crn-pmdbs-sc-rnaseq-collection-v3/sulzer-pmdbs-sn-rnaseq/artifacts
+0,sulzer-pmdbs-sn-rnaseq,gs://asap-curated-team-sulzer-pmdbs-sn-rnaseq/file_metadata/release/v4.1.0,gs://asap-crn-pmdbs-sc-rnaseq-collection-v3/sulzer-pmdbs-sn-rnaseq/file_metadata
+0,sulzer-pmdbs-sn-rnaseq,gs://asap-curated-team-sulzer-pmdbs-sn-rnaseq/metadata/release/v4.1.0,gs://asap-crn-pmdbs-sc-rnaseq-collection-v3/sulzer-pmdbs-sn-rnaseq/metadata
+0,sulzer-pmdbs-sn-rnaseq,gs://asap-curated-team-sulzer-pmdbs-sn-rnaseq/pmdbs_sc_rnaseq/release/v4.0.0,gs://asap-crn-pmdbs-sc-rnaseq-collection-v3/sulzer-pmdbs-sn-rnaseq/pmdbs_sc_rnaseq

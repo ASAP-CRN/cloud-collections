@@ -1,0 +1,6 @@
+,dataset,source_url,dest_url
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/artifacts,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/artifacts
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/file_metadata/release/v4.0.0,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/file_metadata
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/metadata/release/v4.0.0,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/metadata
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/spatial,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/spatial
+0,cragg-mouse-spatial-visium-striatum,gs://asap-curated-team-cragg-mouse-spatial-visium-striatum/spatial_visium/release/v3.0.0,gs://asap-crn-mouse-spatial-rnaseq-collection-v1/cragg-mouse-spatial-visium-striatum/spatial_visium

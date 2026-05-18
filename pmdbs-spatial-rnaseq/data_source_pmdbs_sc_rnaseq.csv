@@ -1,0 +1,2 @@
+,dataset,source_url,dest_url
+0,scherzer-pmdbs-spatial-visium-mtg,gs://asap-curated-team-scherzer-pmdbs-spatial-visium-mtg/pmdbs_sc_rnaseq,gs://asap-crn-pmdbs-spatial-rnaseq-collection-v1/scherzer-pmdbs-spatial-visium-mtg/pmdbs_sc_rnaseq

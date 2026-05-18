@@ -41,8 +41,8 @@
       }
     }
   },
-  "mouse-spatial": {
-    "name": "mouse-spatial",
+  "mouse-spatial-rnaseq": {
+    "name": "mouse-spatial-rnaseq",
     "title": "Mouse Spatial RNAseq",
     "collection_doi": "10.5281/zenodo.16979296",
     "current_version": "v1.0.0",
@@ -67,7 +67,7 @@
           "cragg"
         ],
         "types": [
-          "mouse-spatial"
+          "mouse-spatial-rnaseq"
         ],
         "release": {
           "version": "v4.0.0",
@@ -314,8 +314,8 @@
       }
     }
   },
-  "pmdbs-spatial": {
-    "name": "pmdbs-spatial",
+  "pmdbs-spatial-rnaseq": {
+    "name": "pmdbs-spatial-rnaseq",
     "title": "PMDBS Spatial RNAseq",
     "collection_doi": "10.5281/zenodo.16979474",
     "current_version": "v1.1.0",
@@ -341,7 +341,7 @@
           "edwards"
         ],
         "types": [
-          "pmdbs-spatial"
+          "pmdbs-spatial-rnaseq"
         ],
         "release": {
           "version": "v3.0.2",
@@ -362,7 +362,7 @@
           "scherzer"
         ],
         "types": [
-          "pmdbs-spatial"
+          "pmdbs-spatial-rnaseq"
         ],
         "release": {
           "version": "v4.0.0",

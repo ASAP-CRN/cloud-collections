@@ -1,0 +1,2 @@
+,dataset,source_url,dest_url
+0,cohort-mouse-sc-rnaseq,gs://asap-curated-cohort-mouse-sc-rnaseq/artifacts,gs://asap-crn-mouse-sc-rnaseq-collection-v1/cohort-mouse-sc-rnaseq/artifacts

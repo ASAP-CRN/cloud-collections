@@ -1,9 +1,9 @@
 {
-  "name": "mouse-spatial",
+  "name": "mouse-spatial-rnaseq",
   "title": "Mouse Spatial RNAseq",
   "collection_doi": "10.5281/zenodo.16979296",
   "types": [
-    "mouse-spatial"
+    "mouse-spatial-rnaseq"
   ],
   "versions": {
     "v1.0.0": {
@@ -17,7 +17,7 @@
         "cragg"
       ],
       "types": [
-        "mouse-spatial"
+        "mouse-spatial-rnaseq"
       ],
       "release": {
         "version": "v4.0.0",

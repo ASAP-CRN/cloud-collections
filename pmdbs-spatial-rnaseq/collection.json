@@ -1,9 +1,9 @@
 {
-  "name": "pmdbs-spatial",
+  "name": "pmdbs-spatial-rnaseq",
   "title": "PMDBS Spatial RNAseq",
   "collection_doi": "10.5281/zenodo.16979474",
   "types": [
-    "pmdbs-spatial"
+    "pmdbs-spatial-rnaseq"
   ],
   "versions": {
     "v1.0.0": {
@@ -17,7 +17,7 @@
         "edwards"
       ],
       "types": [
-        "pmdbs-spatial"
+        "pmdbs-spatial-rnaseq"
       ],
       "release": {
         "version": "v3.0.2",
@@ -38,7 +38,7 @@
         "scherzer"
       ],
       "types": [
-        "pmdbs-spatial"
+        "pmdbs-spatial-rnaseq"
       ],
       "release": {
         "version": "v4.0.0",
