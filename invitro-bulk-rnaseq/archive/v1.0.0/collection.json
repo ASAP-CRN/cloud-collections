@@ -1,0 +1,29 @@
+{
+    "name": "invitro-bulk-rnaseq",
+    "title": "Invitro bulk RNAseq",
+    "collection_doi": "10.5281/zenodo.20400938",
+    "types": [
+        "invitro-bulk-rnaseq"
+    ],
+    "versions": {
+        "v1.0.0": {
+            "version": "1.0.0",
+            "date": "2026-06-10",
+            "doi": "10.5281/zenodo.20400468",
+            "datasets": [
+                "voet-pmdbs-sn-atacseq-10x"
+            ],
+            "teams": [
+                "voet"
+            ],
+            "types": [
+                "invitro-bulk-rnaseq"
+            ],
+            "release": {
+                "version": "5.0.0",
+                "cde_version": "v4.4",
+                "date": "2026-06-10"
+            }
+        }
+    }
+}

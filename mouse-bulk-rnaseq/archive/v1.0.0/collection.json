@@ -1,0 +1,30 @@
+{
+    "name": "mouse-bulk-rnaseq",
+    "title": "Mouse bulk RNAseq",
+    "collection_doi": "10.5281/zenodo.22758101",
+    "types": [
+        "mouse-bulk-rnaseq"
+    ],
+    "versions": {
+        "v1.0.0": {
+            "version": "1.0.0",
+            "date": "2026-09-30",
+            "doi": "10.5281/zenodo.22758102",
+            "datasets": [
+                "lee-mouse-liver-bulk-rnaseq-g2019s",
+                "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet"
+            ],
+            "teams": [
+                "lee"
+            ],
+            "types": [
+                "mouse-bulk-rnaseq"
+            ],
+            "release": {
+                "version": "5.1.0",
+                "cde_version": "v4.5",
+                "date": "2026-09-30"
+            }
+        }
+    }
+}
