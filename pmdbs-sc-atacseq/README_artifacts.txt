@@ -1,0 +1,2 @@
+The artifact files in this directory were copied from the dataset's curated bucket (`gs://asap-curated-team-voet-pmdbs-sn-atacseq-10x/artifacts/`) to the collection bucket
+(`gs://asap-crn-pmdbs-sc-atacseq-collection-v1/voet-pmdbs-sn-atacseq-10x/artifacts/`).

@@ -11,13 +11,13 @@
       "cohort-mouse-sc-rnaseq"
     ],
     "release": {
-      "version": "v4.0.0",
+      "version": "4.0.0",
       "cde_version": "v3.3",
       "date": "2025-12-15"
     },
     "versions": {
       "v1.0.0": {
-        "version": "v1.0.0",
+        "version": "1.0.0",
         "date": "2025-12-15",
         "doi": "10.5281/zenodo.17860975",
         "datasets": [
@@ -34,7 +34,7 @@
           "mouse-sc-rnaseq"
         ],
         "release": {
-          "version": "v4.0.0",
+          "version": "4.0.0",
           "cde_version": "v3.3",
           "date": "2025-12-15"
         }
@@ -51,13 +51,13 @@
       "cragg-mouse-spatial-visium-striatum"
     ],
     "release": {
-      "version": "v4.0.0",
+      "version": "4.0.0",
       "cde_version": "v3.3",
       "date": "2025-09-30"
     },
     "versions": {
       "v1.0.0": {
-        "version": "v1.0.0",
+        "version": "1.0.0",
         "date": "2025-09-30",
         "doi": "10.5281/zenodo.16979297",
         "datasets": [
@@ -70,7 +70,7 @@
           "mouse-spatial-rnaseq"
         ],
         "release": {
-          "version": "v4.0.0",
+          "version": "4.0.0",
           "cde_version": "v3.3",
           "date": "2025-09-30"
         }
@@ -91,13 +91,13 @@
       "jakobsson-pmdbs-bulk-rnaseq"
     ],
     "release": {
-      "version": "v4.0.0",
+      "version": "4.0.0",
       "cde_version": "v3.3",
       "date": "2025-12-15"
     },
     "versions": {
       "v1.0.0": {
-        "version": "v1.0.0",
+        "version": "1.0.0",
         "date": "2024-09-11",
         "doi": "10.5281/zenodo.14373344",
         "datasets": [
@@ -116,13 +116,13 @@
           "pmdbs-bulk-rnaseq"
         ],
         "release": {
-          "version": "v2.0.3",
+          "version": "2.0.3",
           "cde_version": "v3.0",
           "date": "2024-09-11"
         }
       },
       "v1.1.0": {
-        "version": "v1.1.0",
+        "version": "1.1.0",
         "date": "2025-09-30",
         "doi": "10.5281/zenodo.16975686",
         "datasets": [
@@ -141,13 +141,13 @@
           "pmdbs-bulk-rnaseq"
         ],
         "release": {
-          "version": "v3.0.2",
+          "version": "3.0.2",
           "cde_version": "v3.2",
           "date": "2025-09-30"
         }
       },
       "v1.2.0": {
-        "version": "v1.2.0",
+        "version": "1.2.0",
         "date": "2025-12-15",
         "doi": "10.5281/zenodo.17860841",
         "datasets": [
@@ -168,7 +168,7 @@
           "pmdbs-bulk-rnaseq"
         ],
         "release": {
-          "version": "v4.0.0",
+          "version": "4.0.0",
           "cde_version": "v3.3",
           "date": "2025-12-15"
         }
@@ -191,13 +191,13 @@
       "sulzer-pmdbs-sn-rnaseq"
     ],
     "release": {
-      "version": "v4.0.0",
+      "version": "4.0.0",
       "cde_version": "v3.3",
       "date": "2025-12-15"
     },
     "versions": {
       "v1.0.0": {
-        "version": "v1.0.0",
+        "version": "1.0.0",
         "date": null,
         "doi": null,
         "datasets": [
@@ -218,13 +218,13 @@
           "pmdbs-sc-rnaseq"
         ],
         "release": {
-          "version": "v1.0.0",
+          "version": "1.0.0",
           "cde_version": "v2.1",
           "date": null
         }
       },
       "v2.0.0": {
-        "version": "v2.0.0",
+        "version": "2.0.0",
         "date": "2024-09-11",
         "doi": "10.5281/zenodo.14373048",
         "datasets": [
@@ -247,13 +247,13 @@
           "pmdbs-sc-rnaseq"
         ],
         "release": {
-          "version": "v2.0.3",
+          "version": "2.0.3",
           "cde_version": "v3.0",
           "date": "2024-09-11"
         }
       },
       "v3.0.0": {
-        "version": "v3.0.0",
+        "version": "3.0.0",
         "date": "2025-09-30",
         "doi": "10.5281/zenodo.16979638",
         "datasets": [
@@ -276,13 +276,13 @@
           "pmdbs-sc-rnaseq"
         ],
         "release": {
-          "version": "v3.0.2",
+          "version": "3.0.2",
           "cde_version": "v3.2",
           "date": "2025-09-30"
         }
       },
       "v3.1.0": {
-        "version": "v3.1.0",
+        "version": "3.1.0",
         "date": "2025-12-15",
         "doi": "10.5281/zenodo.17860778",
         "datasets": [
@@ -307,7 +307,7 @@
           "pmdbs-sc-rnaseq"
         ],
         "release": {
-          "version": "v4.0.0",
+          "version": "4.0.0",
           "cde_version": "v3.3",
           "date": "2025-12-15"
         }
@@ -325,13 +325,13 @@
       "scherzer-pmdbs-spatial-visium-mtg"
     ],
     "release": {
-      "version": "v4.0.0",
+      "version": "4.0.0",
       "cde_version": "v3.3",
       "date": "2025-12-15"
     },
     "versions": {
       "v1.0.0": {
-        "version": "v1.0.0",
+        "version": "1.0.0",
         "date": "2025-09-30",
         "doi": "10.5281/zenodo.16979475",
         "datasets": [
@@ -344,13 +344,13 @@
           "pmdbs-spatial-rnaseq"
         ],
         "release": {
-          "version": "v3.0.2",
+          "version": "3.0.2",
           "cde_version": "v3.2",
           "date": "2025-09-30"
         }
       },
       "v1.1.0": {
-        "version": "v1.1.0",
+        "version": "1.1.0",
         "date": "2025-12-15",
         "doi": "10.5281/zenodo.17860901",
         "datasets": [
@@ -365,7 +365,7 @@
           "pmdbs-spatial-rnaseq"
         ],
         "release": {
-          "version": "v4.0.0",
+          "version": "4.0.0",
           "cde_version": "v3.3",
           "date": "2025-12-15"
         }

@@ -1,0 +1,29 @@
+{
+    "name": "pmdbs-sc-atacseq",
+    "title": "PMDBS scATACseq",
+    "collection_doi": "10.5281/zenodo.20400468",
+    "types": [
+        "pmdbs-sc-atacseq"
+    ],
+    "versions": {
+        "v1.0.0": {
+            "version": "1.0.0",
+            "date": "2026-06-10",
+            "doi": "10.5281/zenodo.20400468",
+            "datasets": [
+                "voet-pmdbs-sn-atacseq-10x"
+            ],
+            "teams": [
+                "voet"
+            ],
+            "types": [
+                "mouse-sc-atacseq"
+            ],
+            "release": {
+                "version": "5.0.0",
+                "cde_version": "v4.4",
+                "date": "2026-06-10"
+            }
+        }
+    }
+}
