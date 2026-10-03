@@ -1,375 +1,676 @@
 {
-  "mouse-sc-rnaseq": {
-    "name": "mouse-sc-rnaseq",
-    "title": "Mouse scRNAseq",
-    "collection_doi": "10.5281/zenodo.17860974",
-    "current_version": "v1.0.0",
-    "doi": "10.5281/zenodo.17860975",
-    "datasets": [
-      "biederer-mouse-sc-rnaseq",
-      "cragg-mouse-sn-rnaseq-striatum",
-      "cohort-mouse-sc-rnaseq"
-    ],
-    "release": {
-      "version": "v4.0.0",
-      "cde_version": "v3.3",
-      "date": "2025-12-15"
-    },
-    "versions": {
-      "v1.0.0": {
-        "version": "v1.0.0",
-        "date": "2025-12-15",
-        "doi": "10.5281/zenodo.17860975",
+    "invitro-bulk-rnaseq": {
+        "name": "invitro-bulk-rnaseq",
+        "title": "Invitro bulk RNAseq",
+        "collection_doi": "10.5281/zenodo.20400938",
+        "types": [
+            "invitro-bulk-rnaseq"
+        ],
+        "date": "2026-06-10",
+        "doi": "10.5281/zenodo.20400468",
         "datasets": [
-          "biederer-mouse-sc-rnaseq",
-          "cragg-mouse-sn-rnaseq-striatum",
-          "cohort-mouse-sc-rnaseq"
+            "voet-pmdbs-sn-atacseq-10x"
         ],
         "teams": [
-          "biederer",
-          "cohort",
-          "cragg"
-        ],
-        "types": [
-          "mouse-sc-rnaseq"
+            "voet"
         ],
         "release": {
-          "version": "v4.0.0",
-          "cde_version": "v3.3",
-          "date": "2025-12-15"
-        }
-      }
-    }
-  },
-  "mouse-spatial-rnaseq": {
-    "name": "mouse-spatial-rnaseq",
-    "title": "Mouse Spatial RNAseq",
-    "collection_doi": "10.5281/zenodo.16979296",
-    "current_version": "v1.0.0",
-    "doi": "10.5281/zenodo.16979297",
-    "datasets": [
-      "cragg-mouse-spatial-visium-striatum"
-    ],
-    "release": {
-      "version": "v4.0.0",
-      "cde_version": "v3.3",
-      "date": "2025-09-30"
-    },
-    "versions": {
-      "v1.0.0": {
+            "version": "v5.0.0",
+            "cde_version": "v4.4",
+            "date": "2026-06-10"
+        },
         "version": "v1.0.0",
-        "date": "2025-09-30",
-        "doi": "10.5281/zenodo.16979297",
+        "versions": {
+            "v1.0.0": {
+                "date": "2026-06-10",
+                "doi": "10.5281/zenodo.20400468",
+                "datasets": [
+                    "voet-pmdbs-sn-atacseq-10x"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2026-06-10"
+                }
+            }
+        },
+        "curation": {
+            "voet-pmdbs-sn-atacseq-10x": {
+                "workflow": "invitro-bulk-rnaseq",
+                "collection_version": "v1.0.0",
+                "workflow_version": "v2.0.0",
+                "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v2.0.0",
+                "upstream": "1.0.0",
+                "downstream": "v2.0.0",
+                "cohort_analysis": "v2.0.0",
+                "collection_version_doi": "10.5281/zenodo.20400939",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-pmdbs-sc-atacseq-collection-v1/voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq",
+                    "dataset_bucket": "gs://asap-curated-team-voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq/release/v5.0.0"
+                }
+            }
+        }
+    },
+    "mouse-bulk-rnaseq": {
+        "name": "mouse-bulk-rnaseq",
+        "title": "Mouse bulk RNAseq",
+        "collection_doi": "10.5281/zenodo.22758101",
+        "types": [
+            "mouse-bulk-rnaseq"
+        ],
+        "date": "2026-09-30",
+        "doi": "10.5281/zenodo.22758102",
         "datasets": [
-          "cragg-mouse-spatial-visium-striatum"
+            "lee-mouse-liver-bulk-rnaseq-g2019s",
+            "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet"
         ],
         "teams": [
-          "cragg"
-        ],
-        "types": [
-          "mouse-spatial-rnaseq"
+            "lee"
         ],
         "release": {
-          "version": "v4.0.0",
-          "cde_version": "v3.3",
-          "date": "2025-09-30"
-        }
-      }
-    }
-  },
-  "pmdbs-bulk-rnaseq": {
-    "name": "pmdbs-bulk-rnaseq",
-    "title": "PMDBS bulkRNAseq",
-    "collection_doi": "10.5281/zenodo.14373343",
-    "current_version": "v1.2.0",
-    "doi": "10.5281/zenodo.17860841",
-    "datasets": [
-      "hardy-pmdbs-bulk-rnaseq",
-      "lee-pmdbs-bulk-rnaseq-mfg",
-      "wood-pmdbs-bulk-rnaseq",
-      "cohort-pmdbs-bulk-rnaseq",
-      "jakobsson-pmdbs-bulk-rnaseq"
-    ],
-    "release": {
-      "version": "v4.0.0",
-      "cde_version": "v3.3",
-      "date": "2025-12-15"
-    },
-    "versions": {
-      "v1.0.0": {
+            "version": "v5.1.0",
+            "cde_version": "v4.5",
+            "date": "2026-09-30"
+        },
         "version": "v1.0.0",
-        "date": "2024-09-11",
-        "doi": "10.5281/zenodo.14373344",
+        "versions": {
+            "v1.0.0": {
+                "date": "2026-09-30",
+                "doi": "10.5281/zenodo.22758102",
+                "datasets": [
+                    "lee-mouse-liver-bulk-rnaseq-g2019s",
+                    "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet"
+                ],
+                "release": {
+                    "version": "v5.1.0",
+                    "cde_version": "v4.5",
+                    "date": "2026-09-30"
+                }
+            }
+        },
+        "curation": {
+            "lee-mouse-liver-bulk-rnaseq-g2019s": {
+                "workflow": "mouse-bulk-rnaseq",
+                "collection_version": "v1.0.0",
+                "workflow_version": "v3.0.0",
+                "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v3.0.0",
+                "upstream": "1.0.2",
+                "downstream": "v2.0.0",
+                "cohort_analysis": "v2.0.0",
+                "collection_version_doi": "10.5281/zenodo.22758102",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-mouse-bulk-rnaseq-collection-v1/lee-mouse-liver-bulk-rnaseq-g2019s/mouse_bulk_rnaseq",
+                    "dataset_bucket": "gs://asap-curated-team-lee-mouse-liver-bulk-rnaseq-g2019s/mouse_bulk_rnaseq/release/v5.1.0"
+                }
+            },
+            "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet": {
+                "workflow": "mouse-bulk-rnaseq",
+                "collection_version": "v1.0.0",
+                "workflow_version": "v3.0.0",
+                "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v3.0.0",
+                "upstream": "1.0.2",
+                "downstream": "v2.0.0",
+                "cohort_analysis": "v2.0.0",
+                "collection_version_doi": "10.5281/zenodo.22758102",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-mouse-bulk-rnaseq-collection-v1/lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet/mouse_bulk_rnaseq",
+                    "dataset_bucket": "gs://asap-curated-team-lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet/mouse_bulk_rnaseq/release/v5.1.0"
+                }
+            }
+        }
+    },
+    "mouse-sc-rnaseq": {
+        "name": "mouse-sc-rnaseq",
+        "title": "Mouse scRNAseq",
+        "collection_doi": "10.5281/zenodo.17860974",
+        "types": [
+            "mouse-sc-rnaseq"
+        ],
+        "date": "2026-09-30",
+        "doi": "10.5281/zenodo.22757930",
         "datasets": [
-          "hardy-pmdbs-bulk-rnaseq",
-          "lee-pmdbs-bulk-rnaseq-mfg",
-          "wood-pmdbs-bulk-rnaseq",
-          "cohort-pmdbs-bulk-rnaseq"
+            "biederer-mouse-sc-rnaseq",
+            "cragg-mouse-sn-rnaseq-striatum",
+            "cohort-mouse-sc-rnaseq",
+            "schlossmacher-mouse-sn-rnaseq-osn-aav-transd",
+            "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s"
         ],
         "teams": [
-          "cohort",
-          "hardy",
-          "lee",
-          "wood"
-        ],
-        "types": [
-          "pmdbs-bulk-rnaseq"
+            "biederer",
+            "cohort",
+            "cragg",
+            "schlossmacher",
+            "alessi"
         ],
         "release": {
-          "version": "v2.0.3",
-          "cde_version": "v3.0",
-          "date": "2024-09-11"
-        }
-      },
-      "v1.1.0": {
+            "version": "v5.1.0",
+            "cde_version": "v4.5",
+            "date": "2026-09-30"
+        },
         "version": "v1.1.0",
-        "date": "2025-09-30",
-        "doi": "10.5281/zenodo.16975686",
-        "datasets": [
-          "hardy-pmdbs-bulk-rnaseq",
-          "lee-pmdbs-bulk-rnaseq-mfg",
-          "wood-pmdbs-bulk-rnaseq",
-          "cohort-pmdbs-bulk-rnaseq"
-        ],
-        "teams": [
-          "cohort",
-          "hardy",
-          "lee",
-          "wood"
-        ],
-        "types": [
-          "pmdbs-bulk-rnaseq"
-        ],
-        "release": {
-          "version": "v3.0.2",
-          "cde_version": "v3.2",
-          "date": "2025-09-30"
+        "versions": {
+            "v1.0.0": {
+                "date": "2025-12-15",
+                "doi": "10.5281/zenodo.17860975",
+                "datasets": [
+                    "biederer-mouse-sc-rnaseq",
+                    "cragg-mouse-sn-rnaseq-striatum",
+                    "cohort-mouse-sc-rnaseq"
+                ],
+                "release": {
+                    "version": "v4.0.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-12-15"
+                }
+            },
+            "v1.0.1": {
+                "date": "2026-06-15",
+                "doi": "10.5281/zenodo.20403854",
+                "datasets": [
+                    "biederer-mouse-sc-rnaseq",
+                    "cragg-mouse-sn-rnaseq-striatum",
+                    "cohort-mouse-sc-rnaseq"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2026-06-15"
+                }
+            },
+            "v1.1.0": {
+                "date": "2026-09-30",
+                "doi": "10.5281/zenodo.22757930",
+                "datasets": [
+                    "biederer-mouse-sc-rnaseq",
+                    "cragg-mouse-sn-rnaseq-striatum",
+                    "cohort-mouse-sc-rnaseq",
+                    "schlossmacher-mouse-sn-rnaseq-osn-aav-transd",
+                    "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s"
+                ],
+                "release": {
+                    "version": "v5.1.0",
+                    "cde_version": "v4.5",
+                    "date": "2026-09-30"
+                }
+            }
+        },
+        "curation": {
+            "cragg-mouse-sn-rnaseq-striatum": {
+                "workflow": "mouse-sc-rnaseq",
+                "collection_version": "v1.1.0",
+                "workflow_version": "v4.1.0",
+                "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+                "preprocess_cellranger": "2.0.0",
+                "preprocess_counts_to_adata": "v1.2.0",
+                "preprocess_cellbender": "v1.0.1",
+                "cohort_analysis": "v4.0.0",
+                "collection_version_doi": "10.5281/zenodo.22757930",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq",
+                    "dataset_bucket": "gs://asap-curated-team-cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq/release/v5.1.0"
+                }
+            },
+            "schlossmacher-mouse-sn-rnaseq-osn-aav-transd": {
+                "workflow": "mouse-sc-rnaseq",
+                "collection_version": "v1.1.0",
+                "workflow_version": "v4.1.0",
+                "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+                "preprocess_cellranger": "2.0.0",
+                "preprocess_counts_to_adata": "v1.2.0",
+                "preprocess_cellbender": "v1.0.1",
+                "cohort_analysis": "v4.0.0",
+                "collection_version_doi": "10.5281/zenodo.22757930",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/schlossmacher-mouse-sn-rnaseq-osn-aav-transd/mouse_sc_rnaseq",
+                    "dataset_bucket": "gs://asap-curated-team-schlossmacher-mouse-sn-rnaseq-osn-aav-transd/mouse_sc_rnaseq/release/v5.1.0"
+                }
+            },
+            "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s": {
+                "workflow": "mouse-sc-rnaseq",
+                "collection_version": "v1.1.0",
+                "workflow_version": "v4.1.0",
+                "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+                "preprocess_cellranger": "2.0.0",
+                "preprocess_counts_to_adata": "v1.2.0",
+                "preprocess_cellbender": "v1.0.1",
+                "cohort_analysis": "v4.0.0",
+                "collection_version_doi": "10.5281/zenodo.22757930",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s/mouse_sc_rnaseq",
+                    "dataset_bucket": "gs://asap-curated-team-alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s/mouse_sc_rnaseq/release/v5.1.0"
+                }
+            }
         }
-      },
-      "v1.2.0": {
-        "version": "v1.2.0",
-        "date": "2025-12-15",
-        "doi": "10.5281/zenodo.17860841",
-        "datasets": [
-          "hardy-pmdbs-bulk-rnaseq",
-          "lee-pmdbs-bulk-rnaseq-mfg",
-          "wood-pmdbs-bulk-rnaseq",
-          "cohort-pmdbs-bulk-rnaseq",
-          "jakobsson-pmdbs-bulk-rnaseq"
-        ],
-        "teams": [
-          "cohort",
-          "hardy",
-          "jakobsson",
-          "lee",
-          "wood"
-        ],
-        "types": [
-          "pmdbs-bulk-rnaseq"
-        ],
-        "release": {
-          "version": "v4.0.0",
-          "cde_version": "v3.3",
-          "date": "2025-12-15"
-        }
-      }
-    }
-  },
-  "pmdbs-sc-rnaseq": {
-    "name": "pmdbs-sc-rnaseq",
-    "title": "PMDBS scRNAseq",
-    "collection_doi": "10.5281/zenodo.14373047",
-    "current_version": "v3.1.0",
-    "doi": "10.5281/zenodo.17860778",
-    "datasets": [
-      "hafler-pmdbs-sn-rnaseq-pfc",
-      "lee-pmdbs-sn-rnaseq",
-      "scherzer-pmdbs-sn-rnaseq-mtg",
-      "hardy-pmdbs-sn-rnaseq",
-      "cohort-pmdbs-sc-rnaseq",
-      "jakobsson-pmdbs-sn-rnaseq",
-      "sulzer-pmdbs-sn-rnaseq"
-    ],
-    "release": {
-      "version": "v4.0.0",
-      "cde_version": "v3.3",
-      "date": "2025-12-15"
     },
-    "versions": {
-      "v1.0.0": {
-        "version": "v1.0.0",
-        "date": null,
-        "doi": null,
+    "mouse-spatial-rnaseq": {
+        "name": "mouse-spatial-rnaseq",
+        "title": "Mouse Spatial RNAseq",
+        "collection_doi": "10.5281/zenodo.16979296",
+        "types": [
+            "mouse-spatial-rnaseq"
+        ],
+        "date": "2026-06-15",
+        "doi": "10.5281/zenodo.20403845",
         "datasets": [
-          "hafler-pmdbs-sn-rnaseq-pfc",
-          "lee-pmdbs-sn-rnaseq",
-          "jakobsson-pmdbs-sn-rnaseq",
-          "scherzer-pmdbs-sn-rnaseq-mtg",
-          "cohort-pmdbs-sc-rnaseq"
+            "cragg-mouse-spatial-visium-striatum"
         ],
         "teams": [
-          "cohort",
-          "hafler",
-          "jakobsson",
-          "lee",
-          "scherzer"
-        ],
-        "types": [
-          "pmdbs-sc-rnaseq"
+            "cragg"
         ],
         "release": {
-          "version": "v1.0.0",
-          "cde_version": "v2.1",
-          "date": null
-        }
-      },
-      "v2.0.0": {
-        "version": "v2.0.0",
-        "date": "2024-09-11",
-        "doi": "10.5281/zenodo.14373048",
-        "datasets": [
-          "hafler-pmdbs-sn-rnaseq-pfc",
-          "lee-pmdbs-sn-rnaseq",
-          "jakobsson-pmdbs-sn-rnaseq",
-          "scherzer-pmdbs-sn-rnaseq-mtg",
-          "hardy-pmdbs-sn-rnaseq",
-          "cohort-pmdbs-sc-rnaseq"
-        ],
-        "teams": [
-          "cohort",
-          "hafler",
-          "hardy",
-          "jakobsson",
-          "lee",
-          "scherzer"
-        ],
-        "types": [
-          "pmdbs-sc-rnaseq"
-        ],
-        "release": {
-          "version": "v2.0.3",
-          "cde_version": "v3.0",
-          "date": "2024-09-11"
-        }
-      },
-      "v3.0.0": {
-        "version": "v3.0.0",
-        "date": "2025-09-30",
-        "doi": "10.5281/zenodo.16979638",
-        "datasets": [
-          "hafler-pmdbs-sn-rnaseq-pfc",
-          "lee-pmdbs-sn-rnaseq",
-          "scherzer-pmdbs-sn-rnaseq-mtg",
-          "hardy-pmdbs-sn-rnaseq",
-          "cohort-pmdbs-sc-rnaseq",
-          "jakobsson-pmdbs-sn-rnaseq"
-        ],
-        "teams": [
-          "cohort",
-          "hafler",
-          "hardy",
-          "jakobsson",
-          "lee",
-          "scherzer"
-        ],
-        "types": [
-          "pmdbs-sc-rnaseq"
-        ],
-        "release": {
-          "version": "v3.0.2",
-          "cde_version": "v3.2",
-          "date": "2025-09-30"
-        }
-      },
-      "v3.1.0": {
-        "version": "v3.1.0",
-        "date": "2025-12-15",
-        "doi": "10.5281/zenodo.17860778",
-        "datasets": [
-          "hafler-pmdbs-sn-rnaseq-pfc",
-          "lee-pmdbs-sn-rnaseq",
-          "scherzer-pmdbs-sn-rnaseq-mtg",
-          "hardy-pmdbs-sn-rnaseq",
-          "cohort-pmdbs-sc-rnaseq",
-          "jakobsson-pmdbs-sn-rnaseq",
-          "sulzer-pmdbs-sn-rnaseq"
-        ],
-        "teams": [
-          "cohort",
-          "hafler",
-          "hardy",
-          "jakobsson",
-          "lee",
-          "scherzer",
-          "sulzer"
-        ],
-        "types": [
-          "pmdbs-sc-rnaseq"
-        ],
-        "release": {
-          "version": "v4.0.0",
-          "cde_version": "v3.3",
-          "date": "2025-12-15"
-        }
-      }
-    }
-  },
-  "pmdbs-spatial-rnaseq": {
-    "name": "pmdbs-spatial-rnaseq",
-    "title": "PMDBS Spatial RNAseq",
-    "collection_doi": "10.5281/zenodo.16979474",
-    "current_version": "v1.1.0",
-    "doi": "10.5281/zenodo.17860901",
-    "datasets": [
-      "edwards-pmdbs-spatial-geomx-th",
-      "scherzer-pmdbs-spatial-visium-mtg"
-    ],
-    "release": {
-      "version": "v4.0.0",
-      "cde_version": "v3.3",
-      "date": "2025-12-15"
+            "version": "v5.0.0",
+            "cde_version": "v4.3",
+            "date": "2026-06-15"
+        },
+        "version": "v1.0.1",
+        "versions": {
+            "v1.0.0": {
+                "date": "2025-09-30",
+                "doi": "10.5281/zenodo.16979297",
+                "datasets": [
+                    "cragg-mouse-spatial-visium-striatum"
+                ],
+                "release": {
+                    "version": "v4.0.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-09-30"
+                }
+            },
+            "v1.0.1": {
+                "date": "2026-06-15",
+                "doi": "10.5281/zenodo.20403845",
+                "datasets": [
+                    "cragg-mouse-spatial-visium-striatum"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.3",
+                    "date": "2026-06-15"
+                }
+            }
+        },
+        "curation": {}
     },
-    "versions": {
-      "v1.0.0": {
+    "pmdbs-bulk-rnaseq": {
+        "name": "pmdbs-bulk-rnaseq",
+        "title": "PMDBS bulkRNAseq",
+        "collection_doi": "10.5281/zenodo.14373343",
+        "types": [
+            "pmdbs-bulk-rnaseq"
+        ],
+        "date": "2026-06-15",
+        "doi": "10.5281/zenodo.20403867",
+        "datasets": [
+            "hardy-pmdbs-bulk-rnaseq",
+            "lee-pmdbs-bulk-rnaseq-mfg",
+            "wood-pmdbs-bulk-rnaseq",
+            "cohort-pmdbs-bulk-rnaseq",
+            "jakobsson-pmdbs-bulk-rnaseq"
+        ],
+        "teams": [
+            "cohort",
+            "hardy",
+            "jakobsson",
+            "lee",
+            "wood"
+        ],
+        "release": {
+            "version": "v5.0.0",
+            "cde_version": "v4.4",
+            "date": "2026-06-15"
+        },
+        "version": "v1.2.2",
+        "versions": {
+            "v1.0.0": {
+                "date": "2024-09-11",
+                "doi": "10.5281/zenodo.14373344",
+                "datasets": [
+                    "hardy-pmdbs-bulk-rnaseq",
+                    "lee-pmdbs-bulk-rnaseq-mfg",
+                    "wood-pmdbs-bulk-rnaseq",
+                    "cohort-pmdbs-bulk-rnaseq"
+                ],
+                "release": {
+                    "version": "v2.0.0",
+                    "cde_version": "v3.0",
+                    "date": "2024-09-11"
+                }
+            },
+            "v1.1.0": {
+                "date": "2025-09-30",
+                "doi": "10.5281/zenodo.16975686",
+                "datasets": [
+                    "hardy-pmdbs-bulk-rnaseq",
+                    "lee-pmdbs-bulk-rnaseq-mfg",
+                    "wood-pmdbs-bulk-rnaseq",
+                    "cohort-pmdbs-bulk-rnaseq"
+                ],
+                "release": {
+                    "version": "v3.0.0",
+                    "cde_version": "v3.2",
+                    "date": "2025-09-30"
+                }
+            },
+            "v1.2.0": {
+                "date": "2025-12-15",
+                "doi": "10.5281/zenodo.17860841",
+                "datasets": [
+                    "hardy-pmdbs-bulk-rnaseq",
+                    "lee-pmdbs-bulk-rnaseq-mfg",
+                    "wood-pmdbs-bulk-rnaseq",
+                    "cohort-pmdbs-bulk-rnaseq",
+                    "jakobsson-pmdbs-bulk-rnaseq"
+                ],
+                "release": {
+                    "version": "v4.0.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-12-15"
+                }
+            },
+            "v1.2.1": {
+                "date": "2026-04-30",
+                "doi": "10.5281/zenodo.19876662",
+                "datasets": [
+                    "hardy-pmdbs-bulk-rnaseq",
+                    "lee-pmdbs-bulk-rnaseq-mfg",
+                    "wood-pmdbs-bulk-rnaseq",
+                    "cohort-pmdbs-bulk-rnaseq",
+                    "jakobsson-pmdbs-bulk-rnaseq"
+                ],
+                "release": {
+                    "version": "v4.1.0",
+                    "cde_version": "v4.3",
+                    "date": "2026-04-30"
+                }
+            },
+            "v1.2.2": {
+                "date": "2026-06-15",
+                "doi": "10.5281/zenodo.20403867",
+                "datasets": [
+                    "hardy-pmdbs-bulk-rnaseq",
+                    "lee-pmdbs-bulk-rnaseq-mfg",
+                    "wood-pmdbs-bulk-rnaseq",
+                    "cohort-pmdbs-bulk-rnaseq",
+                    "jakobsson-pmdbs-bulk-rnaseq"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2026-06-15"
+                }
+            }
+        },
+        "curation": {}
+    },
+    "pmdbs-sc-atacseq": {
+        "name": "pmdbs-sc-atacseq",
+        "title": "PMDBS scATACseq",
+        "collection_doi": "10.5281/zenodo.20400468",
+        "types": [
+            "mouse-sc-atacseq"
+        ],
+        "date": "2026-06-10",
+        "doi": "10.5281/zenodo.20400468",
+        "datasets": [
+            "voet-pmdbs-sn-atacseq-10x"
+        ],
+        "teams": [
+            "voet"
+        ],
+        "release": {
+            "version": "v5.0.0",
+            "cde_version": "v4.4",
+            "date": "2026-06-10"
+        },
         "version": "v1.0.0",
-        "date": "2025-09-30",
-        "doi": "10.5281/zenodo.16979475",
+        "versions": {
+            "v1.0.0": {
+                "date": "2026-06-10",
+                "doi": "10.5281/zenodo.20400468",
+                "datasets": [
+                    "voet-pmdbs-sn-atacseq-10x"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2026-06-10"
+                }
+            }
+        },
+        "curation": {
+            "voet-pmdbs-sn-atacseq-10x": {
+                "workflow": "invitro-bulk-rnaseq",
+                "collection_version": "v1.0.0",
+                "workflow_version": "v2.0.0",
+                "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v2.0.0",
+                "upstream": "1.0.0",
+                "downstream": "v2.0.0",
+                "cohort_analysis": "v2.0.0",
+                "collection_version_doi": "10.5281/zenodo.20400939",
+                "gcp_uri": {
+                    "collection_bucket": "gs://asap-crn-pmdbs-sc-atacseq-collection-v1/voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq",
+                    "dataset_bucket": "gs://asap-curated-team-voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq/release/v5.0.0"
+                }
+            }
+        }
+    },
+    "pmdbs-sc-rnaseq": {
+        "name": "pmdbs-sc-rnaseq",
+        "title": "PMDBS scRNAseq",
+        "collection_doi": "10.5281/zenodo.14373047",
+        "types": [
+            "pmdbs-sc-rnaseq"
+        ],
+        "date": "2025-04-30",
+        "doi": "10.5281/zenodo.20403941",
         "datasets": [
-          "edwards-pmdbs-spatial-geomx-th"
+            "hafler-pmdbs-sn-rnaseq-pfc",
+            "lee-pmdbs-sn-rnaseq",
+            "scherzer-pmdbs-sn-rnaseq-mtg",
+            "hardy-pmdbs-sn-rnaseq",
+            "cohort-pmdbs-sc-rnaseq",
+            "jakobsson-pmdbs-sn-rnaseq",
+            "sulzer-pmdbs-sn-rnaseq"
         ],
         "teams": [
-          "edwards"
-        ],
-        "types": [
-          "pmdbs-spatial-rnaseq"
+            "cohort",
+            "hafler",
+            "hardy",
+            "jakobsson",
+            "lee",
+            "scherzer",
+            "sulzer"
         ],
         "release": {
-          "version": "v3.0.2",
-          "cde_version": "v3.2",
-          "date": "2025-09-30"
-        }
-      },
-      "v1.1.0": {
-        "version": "v1.1.0",
-        "date": "2025-12-15",
-        "doi": "10.5281/zenodo.17860901",
+            "version": "v5.0.0",
+            "cde_version": "v4.4",
+            "date": "2025-06-15"
+        },
+        "version": "v3.1.2",
+        "versions": {
+            "v1.0.0": {
+                "date": null,
+                "doi": null,
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "cohort-pmdbs-sc-rnaseq"
+                ],
+                "release": {
+                    "version": "v1.0.0",
+                    "cde_version": "v2.1",
+                    "date": null
+                }
+            },
+            "v2.0.0": {
+                "date": "2024-09-11",
+                "doi": "10.5281/zenodo.14373048",
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "hardy-pmdbs-sn-rnaseq",
+                    "cohort-pmdbs-sc-rnaseq"
+                ],
+                "release": {
+                    "version": "v2.0.0",
+                    "cde_version": "v3.0",
+                    "date": "2024-09-11"
+                }
+            },
+            "v3.0.0": {
+                "date": "2025-09-30",
+                "doi": "10.5281/zenodo.16979638",
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "hardy-pmdbs-sn-rnaseq",
+                    "cohort-pmdbs-sc-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq"
+                ],
+                "release": {
+                    "version": "v3.0.0",
+                    "cde_version": "v3.2",
+                    "date": "2025-09-30"
+                }
+            },
+            "v3.1.0": {
+                "date": "2025-12-15",
+                "doi": "10.5281/zenodo.17860778",
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "hardy-pmdbs-sn-rnaseq",
+                    "cohort-pmdbs-sc-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq",
+                    "sulzer-pmdbs-sn-rnaseq"
+                ],
+                "release": {
+                    "version": "v4.0.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-12-15"
+                }
+            },
+            "v3.1.1": {
+                "date": "2025-04-30",
+                "doi": "10.5281/zenodo.19876217",
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "hardy-pmdbs-sn-rnaseq",
+                    "cohort-pmdbs-sc-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq",
+                    "sulzer-pmdbs-sn-rnaseq"
+                ],
+                "release": {
+                    "version": "v4.1.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-04-30"
+                }
+            },
+            "v3.1.2": {
+                "date": "2025-04-30",
+                "doi": "10.5281/zenodo.20403941",
+                "datasets": [
+                    "hafler-pmdbs-sn-rnaseq-pfc",
+                    "lee-pmdbs-sn-rnaseq",
+                    "scherzer-pmdbs-sn-rnaseq-mtg",
+                    "hardy-pmdbs-sn-rnaseq",
+                    "cohort-pmdbs-sc-rnaseq",
+                    "jakobsson-pmdbs-sn-rnaseq",
+                    "sulzer-pmdbs-sn-rnaseq"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2025-06-15"
+                }
+            }
+        },
+        "curation": {}
+    },
+    "pmdbs-spatial-rnaseq": {
+        "name": "pmdbs-spatial-rnaseq",
+        "title": "PMDBS Spatial RNAseq",
+        "collection_doi": "10.5281/zenodo.16979474",
+        "types": [
+            "pmdbs-spatial-rnaseq"
+        ],
+        "date": "2026-06-15",
+        "doi": "10.5281/zenodo.20403929",
         "datasets": [
-          "edwards-pmdbs-spatial-geomx-th",
-          "scherzer-pmdbs-spatial-visium-mtg"
+            "edwards-pmdbs-spatial-geomx-th",
+            "scherzer-pmdbs-spatial-visium-mtg"
         ],
         "teams": [
-          "edwards",
-          "scherzer"
-        ],
-        "types": [
-          "pmdbs-spatial-rnaseq"
+            "edwards",
+            "scherzer"
         ],
         "release": {
-          "version": "v4.0.0",
-          "cde_version": "v3.3",
-          "date": "2025-12-15"
-        }
-      }
+            "version": "v5.0.0",
+            "cde_version": "v4.4",
+            "date": "2026-06-15"
+        },
+        "version": "v1.1.2",
+        "versions": {
+            "v1.0.0": {
+                "date": "2025-09-30",
+                "doi": "10.5281/zenodo.16979475",
+                "datasets": [
+                    "edwards-pmdbs-spatial-geomx-th"
+                ],
+                "release": {
+                    "version": "v3.0.0",
+                    "cde_version": "v3.2",
+                    "date": "2025-09-30"
+                }
+            },
+            "v1.1.0": {
+                "date": "2025-12-15",
+                "doi": "10.5281/zenodo.17860901",
+                "datasets": [
+                    "edwards-pmdbs-spatial-geomx-th",
+                    "scherzer-pmdbs-spatial-visium-mtg"
+                ],
+                "release": {
+                    "version": "v4.0.0",
+                    "cde_version": "v3.3",
+                    "date": "2025-12-15"
+                }
+            },
+            "v1.1.1": {
+                "date": "2026-04-30",
+                "doi": "10.5281/zenodo.19876627",
+                "datasets": [
+                    "edwards-pmdbs-spatial-geomx-th",
+                    "scherzer-pmdbs-spatial-visium-mtg"
+                ],
+                "release": {
+                    "version": "v4.1.0",
+                    "cde_version": "v4.3",
+                    "date": "2026-04-30"
+                }
+            },
+            "v1.1.2": {
+                "date": "2026-06-15",
+                "doi": "10.5281/zenodo.20403929",
+                "datasets": [
+                    "edwards-pmdbs-spatial-geomx-th",
+                    "scherzer-pmdbs-spatial-visium-mtg"
+                ],
+                "release": {
+                    "version": "v5.0.0",
+                    "cde_version": "v4.4",
+                    "date": "2026-06-15"
+                }
+            }
+        },
+        "curation": {}
     }
-  }
 }

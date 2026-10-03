@@ -1,0 +1,52 @@
+{
+    "name": "pmdbs-sc-atacseq",
+    "title": "PMDBS scATACseq",
+    "collection_doi": "10.5281/zenodo.20400468",
+    "types": [
+        "mouse-sc-atacseq"
+    ],
+    "date": "2026-06-10",
+    "doi": "10.5281/zenodo.20400468",
+    "datasets": [
+        "voet-pmdbs-sn-atacseq-10x"
+    ],
+    "teams": [
+        "voet"
+    ],
+    "release": {
+        "version": "v5.0.0",
+        "cde_version": "v4.4",
+        "date": "2026-06-10"
+    },
+    "version": "v1.0.0",
+    "versions": {
+        "v1.0.0": {
+            "date": "2026-06-10",
+            "doi": "10.5281/zenodo.20400468",
+            "datasets": [
+                "voet-pmdbs-sn-atacseq-10x"
+            ],
+            "release": {
+                "version": "v5.0.0",
+                "cde_version": "v4.4",
+                "date": "2026-06-10"
+            }
+        }
+    },
+    "curation": {
+        "voet-pmdbs-sn-atacseq-10x": {
+            "workflow": "invitro-bulk-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v2.0.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v2.0.0",
+            "upstream": "1.0.0",
+            "downstream": "v2.0.0",
+            "cohort_analysis": "v2.0.0",
+            "collection_version_doi": "10.5281/zenodo.20400939",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-sc-atacseq-collection-v1/voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq",
+                "dataset_bucket": "gs://asap-curated-team-voet-pmdbs-sn-atacseq-10x/pmdbs_sc_atacseq/release/v5.0.0"
+            }
+        }
+    }
+}

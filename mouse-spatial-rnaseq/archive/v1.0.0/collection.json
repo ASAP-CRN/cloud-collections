@@ -5,8 +5,8 @@
     "types": [
         "mouse-spatial-rnaseq"
     ],
-    "date": "2026-06-15",
-    "doi": "10.5281/zenodo.20403845",
+    "date": "2025-09-30",
+    "doi": "10.5281/zenodo.16979297",
     "datasets": [
         "cragg-mouse-spatial-visium-striatum"
     ],
@@ -14,11 +14,11 @@
         "cragg"
     ],
     "release": {
-        "version": "v5.0.0",
-        "cde_version": "v4.3",
-        "date": "2026-06-15"
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-09-30"
     },
-    "version": "v1.0.1",
+    "version": "v1.0.0",
     "versions": {
         "v1.0.0": {
             "date": "2025-09-30",
@@ -30,18 +30,6 @@
                 "version": "v4.0.0",
                 "cde_version": "v3.3",
                 "date": "2025-09-30"
-            }
-        },
-        "v1.0.1": {
-            "date": "2026-06-15",
-            "doi": "10.5281/zenodo.20403845",
-            "datasets": [
-                "cragg-mouse-spatial-visium-striatum"
-            ],
-            "release": {
-                "version": "v5.0.0",
-                "cde_version": "v4.3",
-                "date": "2026-06-15"
             }
         }
     },

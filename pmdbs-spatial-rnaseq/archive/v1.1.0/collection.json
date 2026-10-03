@@ -5,8 +5,8 @@
     "types": [
         "pmdbs-spatial-rnaseq"
     ],
-    "date": "2026-06-15",
-    "doi": "10.5281/zenodo.20403929",
+    "date": "2025-12-15",
+    "doi": "10.5281/zenodo.17860901",
     "datasets": [
         "edwards-pmdbs-spatial-geomx-th",
         "scherzer-pmdbs-spatial-visium-mtg"
@@ -16,11 +16,11 @@
         "scherzer"
     ],
     "release": {
-        "version": "v5.0.0",
-        "cde_version": "v4.4",
-        "date": "2026-06-15"
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-12-15"
     },
-    "version": "v1.1.2",
+    "version": "v1.1.0",
     "versions": {
         "v1.0.0": {
             "date": "2025-09-30",
@@ -46,33 +46,23 @@
                 "cde_version": "v3.3",
                 "date": "2025-12-15"
             }
-        },
-        "v1.1.1": {
-            "date": "2026-04-30",
-            "doi": "10.5281/zenodo.19876627",
-            "datasets": [
-                "edwards-pmdbs-spatial-geomx-th",
-                "scherzer-pmdbs-spatial-visium-mtg"
-            ],
-            "release": {
-                "version": "v4.1.0",
-                "cde_version": "v4.3",
-                "date": "2026-04-30"
-            }
-        },
-        "v1.1.2": {
-            "date": "2026-06-15",
-            "doi": "10.5281/zenodo.20403929",
-            "datasets": [
-                "edwards-pmdbs-spatial-geomx-th",
-                "scherzer-pmdbs-spatial-visium-mtg"
-            ],
-            "release": {
-                "version": "v5.0.0",
-                "cde_version": "v4.4",
-                "date": "2026-06-15"
-            }
         }
     },
-    "curation": {}
+    "curation": {
+        "scherzer-pmdbs-spatial-visium-mtg": {
+            "workflow": "pmdbs-spatial-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v1.0.1",
+            "workflow_url": "github.com/ASAP-CRN/spatial-transcriptomics-wf/releases#release-spatial_visium_analysis-v1.0.1",
+            "qc": "1.0.0",
+            "cohort_analysis": "v1.0.1",
+            "spaceranger": "v1.0.0",
+            "counts_adata": "v1.0.0",
+            "collection_version_doi": "10.5281/zenodo.17860901",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-spatial-rnaseq-collection-v1/scherzer-pmdbs-spatial-visium-mtg/pmdbs_spatial_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-scherzer-pmdbs-spatial-visium-mtg/pmdbs_spatial_rnaseq/release/v4.0.0"
+            }
+        }
+    }
 }

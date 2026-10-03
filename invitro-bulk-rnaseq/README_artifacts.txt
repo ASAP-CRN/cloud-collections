@@ -1,0 +1,2 @@
+The artifact files in this directory were copied from the dataset's curated bucket (`gs://asap-curated-cohort-invitro-bulk-rnaseq/artifacts/`) to the collection bucket
+(`gs://asap-crn-invitro-bulk-rnaseq-collection-v1/cohort-invitro-bulk-rnaseq/artifacts/`).
