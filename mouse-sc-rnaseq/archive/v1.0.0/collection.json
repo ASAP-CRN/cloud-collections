@@ -1,33 +1,89 @@
 {
-  "name": "mouse-sc-rnaseq",
-  "title": "Mouse scRNAseq",
-  "collection_doi": "10.5281/zenodo.17860974",
-  "types": [
-    "mouse-sc-rnaseq"
-  ],
-  "versions": {
-    "v1.0.0": {
-      "version": "1.0.0",
-      "date": "2025-12-15",
-      "doi": "10.5281/zenodo.17860975",
-      "datasets": [
+    "name": "mouse-sc-rnaseq",
+    "title": "Mouse scRNAseq",
+    "collection_doi": "10.5281/zenodo.17860974",
+    "types": [
+        "mouse-sc-rnaseq"
+    ],
+    "date": "2025-12-15",
+    "doi": "10.5281/zenodo.17860975",
+    "datasets": [
         "biederer-mouse-sc-rnaseq",
         "cragg-mouse-sn-rnaseq-striatum",
         "cohort-mouse-sc-rnaseq"
-      ],
-      "teams": [
+    ],
+    "teams": [
         "biederer",
         "cohort",
         "cragg"
-      ],
-      "types": [
-        "mouse-sc-rnaseq"
-      ],
-      "release": {
-        "version": "4.0.0",
+    ],
+    "release": {
+        "version": "v4.0.0",
         "cde_version": "v3.3",
         "date": "2025-12-15"
-      }
+    },
+    "version": "v1.0.0",
+    "versions": {
+        "v1.0.0": {
+            "date": "2025-12-15",
+            "doi": "10.5281/zenodo.17860975",
+            "datasets": [
+                "biederer-mouse-sc-rnaseq",
+                "cragg-mouse-sn-rnaseq-striatum",
+                "cohort-mouse-sc-rnaseq"
+            ],
+            "release": {
+                "version": "v4.0.0",
+                "cde_version": "v3.3",
+                "date": "2025-12-15"
+            }
+        }
+    },
+    "curation": {
+        "biederer-mouse-sc-rnaseq": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v4.0.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.0.0",
+            "preprocess_cellranger": "1.1.0",
+            "preprocess_counts_to_adata": "v1.1.0",
+            "preprocess_cellbender": "v1.0.0",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.17860975",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/biederer-mouse-sc-rnaseq/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-biederer-mouse-sc-rnaseq/mouse_sc_rnaseq/release/v4.0.0"
+            }
+        },
+        "cragg-mouse-sn-rnaseq-striatum": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v4.0.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.0.0",
+            "preprocess_cellranger": "1.1.0",
+            "preprocess_counts_to_adata": "v1.1.0",
+            "preprocess_cellbender": "v1.0.0",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.17860975",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq/release/v4.0.0"
+            }
+        },
+        "cohort-mouse-sc-rnaseq": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v4.0.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.0.0",
+            "preprocess_cellranger": "1.1.0",
+            "preprocess_counts_to_adata": "v1.1.0",
+            "preprocess_cellbender": "v1.0.0",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.17860975",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/cohort-mouse-sc-rnaseq/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-cohort-mouse-sc-rnaseq/mouse_sc_rnaseq/release/v4.0.0"
+            }
+        }
     }
-  }
 }

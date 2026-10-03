@@ -1,0 +1,118 @@
+{
+    "name": "pmdbs-bulk-rnaseq",
+    "title": "PMDBS bulkRNAseq",
+    "collection_doi": "10.5281/zenodo.14373343",
+    "types": [
+        "pmdbs-bulk-rnaseq"
+    ],
+    "date": "2025-09-30",
+    "doi": "10.5281/zenodo.16975686",
+    "datasets": [
+        "hardy-pmdbs-bulk-rnaseq",
+        "lee-pmdbs-bulk-rnaseq-mfg",
+        "wood-pmdbs-bulk-rnaseq",
+        "cohort-pmdbs-bulk-rnaseq"
+    ],
+    "teams": [
+        "cohort",
+        "hardy",
+        "lee",
+        "wood"
+    ],
+    "release": {
+        "version": "v3.0.0",
+        "cde_version": "v3.2",
+        "date": "2025-09-30"
+    },
+    "version": "v1.1.0",
+    "versions": {
+        "v1.0.0": {
+            "date": "2024-09-11",
+            "doi": "10.5281/zenodo.14373344",
+            "datasets": [
+                "hardy-pmdbs-bulk-rnaseq",
+                "lee-pmdbs-bulk-rnaseq-mfg",
+                "wood-pmdbs-bulk-rnaseq",
+                "cohort-pmdbs-bulk-rnaseq"
+            ],
+            "release": {
+                "version": "v2.0.0",
+                "cde_version": "v3.0",
+                "date": "2024-09-11"
+            }
+        },
+        "v1.1.0": {
+            "date": "2025-09-30",
+            "doi": "10.5281/zenodo.16975686",
+            "datasets": [
+                "hardy-pmdbs-bulk-rnaseq",
+                "lee-pmdbs-bulk-rnaseq-mfg",
+                "wood-pmdbs-bulk-rnaseq",
+                "cohort-pmdbs-bulk-rnaseq"
+            ],
+            "release": {
+                "version": "v3.0.0",
+                "cde_version": "v3.2",
+                "date": "2025-09-30"
+            }
+        }
+    },
+    "curation": {
+        "hardy-pmdbs-bulk-rnaseq": {
+            "workflow": "pmdbs-bulk-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v1.1.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-pmdbs_bulk_rnaseq_analysis-v1.1.0",
+            "upstream": "1.0.0",
+            "downstream": "v1.1.0",
+            "cohort_analysis": "v1.1.0",
+            "collection_version_doi": "10.5281/zenodo.16975686",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-bulk-rnaseq-collection-v1/hardy-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-hardy-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq/release/v3.0.0"
+            }
+        },
+        "lee-pmdbs-bulk-rnaseq-mfg": {
+            "workflow": "pmdbs-bulk-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v1.1.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-pmdbs_bulk_rnaseq_analysis-v1.1.0",
+            "upstream": "1.0.0",
+            "downstream": "v1.1.0",
+            "cohort_analysis": "v1.1.0",
+            "collection_version_doi": "10.5281/zenodo.16975686",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-bulk-rnaseq-collection-v1/lee-pmdbs-bulk-rnaseq-mfg/pmdbs_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-lee-pmdbs-bulk-rnaseq-mfg/pmdbs_bulk_rnaseq/release/v3.0.0"
+            }
+        },
+        "wood-pmdbs-bulk-rnaseq": {
+            "workflow": "pmdbs-bulk-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v1.1.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-pmdbs_bulk_rnaseq_analysis-v1.1.0",
+            "upstream": "1.0.0",
+            "downstream": "v1.1.0",
+            "cohort_analysis": "v1.1.0",
+            "collection_version_doi": "10.5281/zenodo.16975686",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-bulk-rnaseq-collection-v1/wood-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-wood-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq/release/v3.0.0"
+            }
+        },
+        "cohort-pmdbs-bulk-rnaseq": {
+            "workflow": "pmdbs-bulk-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v1.1.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-pmdbs_bulk_rnaseq_analysis-v1.1.0",
+            "upstream": "1.0.0",
+            "downstream": "v1.1.0",
+            "cohort_analysis": "v1.1.0",
+            "collection_version_doi": "10.5281/zenodo.16975686",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-bulk-rnaseq-collection-v1/cohort-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-cohort-pmdbs-bulk-rnaseq/pmdbs_bulk_rnaseq/release/v3.0.0"
+            }
+        }
+    }
+}

@@ -1,83 +1,123 @@
 {
-  "name": "mouse-sc-rnaseq",
-  "title": "Mouse scRNAseq",
-  "collection_doi": "10.5281/zenodo.17860974",
-  "types": [
-    "mouse-sc-rnaseq"
-  ],
-  "versions": {
-    "v1.0.0": {
-      "version": "1.0.0",
-      "date": "2025-12-15",
-      "doi": "10.5281/zenodo.17860975",
-      "datasets": [
-        "biederer-mouse-sc-rnaseq",
-        "cragg-mouse-sn-rnaseq-striatum",
-        "cohort-mouse-sc-rnaseq"
-      ],
-      "teams": [
-        "biederer",
-        "cohort",
-        "cragg"
-      ],
-      "types": [
+    "name": "mouse-sc-rnaseq",
+    "title": "Mouse scRNAseq",
+    "collection_doi": "10.5281/zenodo.17860974",
+    "types": [
         "mouse-sc-rnaseq"
-      ],
-      "release": {
-        "version": "4.0.0",
-        "cde_version": "v3.3",
-        "date": "2025-12-15"
-      }
-    },
-    "v1.0.1": {
-      "version": "1.0.1",
-      "date": "2026-06-15",
-      "doi": "10.5281/zenodo.20403854",
-      "datasets": [
-        "biederer-mouse-sc-rnaseq",
-        "cragg-mouse-sn-rnaseq-striatum",
-        "cohort-mouse-sc-rnaseq"
-      ],
-      "teams": [
-        "biederer",
-        "cohort",
-        "cragg"
-      ],
-      "types": [
-        "mouse-sc-rnaseq"
-      ],
-      "release": {
-        "version": "5.0.0",
-        "cde_version": "v4.4",
-        "date": "2026-06-15"
-      }
-    },
-    "v1.1.0": {
-      "version": "1.1.0",
-      "date": "2026-09-30",
-      "doi": "10.5281/zenodo.22757930",
-      "datasets": [
+    ],
+    "date": "2026-09-30",
+    "doi": "10.5281/zenodo.22757930",
+    "datasets": [
         "biederer-mouse-sc-rnaseq",
         "cragg-mouse-sn-rnaseq-striatum",
         "cohort-mouse-sc-rnaseq",
         "schlossmacher-mouse-sn-rnaseq-osn-aav-transd",
         "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s"
-      ],
-      "teams": [
+    ],
+    "teams": [
         "biederer",
         "cohort",
         "cragg",
         "schlossmacher",
         "alessi"
-      ],
-      "types": [
-        "mouse-sc-rnaseq"
-      ],
-      "release": {
-        "version": "5.1.0",
+    ],
+    "release": {
+        "version": "v5.1.0",
         "cde_version": "v4.5",
         "date": "2026-09-30"
-      }
+    },
+    "version": "v1.1.0",
+    "versions": {
+        "v1.0.0": {
+            "date": "2025-12-15",
+            "doi": "10.5281/zenodo.17860975",
+            "datasets": [
+                "biederer-mouse-sc-rnaseq",
+                "cragg-mouse-sn-rnaseq-striatum",
+                "cohort-mouse-sc-rnaseq"
+            ],
+            "release": {
+                "version": "v4.0.0",
+                "cde_version": "v3.3",
+                "date": "2025-12-15"
+            }
+        },
+        "v1.0.1": {
+            "date": "2026-06-15",
+            "doi": "10.5281/zenodo.20403854",
+            "datasets": [
+                "biederer-mouse-sc-rnaseq",
+                "cragg-mouse-sn-rnaseq-striatum",
+                "cohort-mouse-sc-rnaseq"
+            ],
+            "release": {
+                "version": "v5.0.0",
+                "cde_version": "v4.4",
+                "date": "2026-06-15"
+            }
+        },
+        "v1.1.0": {
+            "date": "2026-09-30",
+            "doi": "10.5281/zenodo.22757930",
+            "datasets": [
+                "biederer-mouse-sc-rnaseq",
+                "cragg-mouse-sn-rnaseq-striatum",
+                "cohort-mouse-sc-rnaseq",
+                "schlossmacher-mouse-sn-rnaseq-osn-aav-transd",
+                "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s"
+            ],
+            "release": {
+                "version": "v5.1.0",
+                "cde_version": "v4.5",
+                "date": "2026-09-30"
+            }
+        }
+    },
+    "curation": {
+        "cragg-mouse-sn-rnaseq-striatum": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v4.1.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+            "preprocess_cellranger": "2.0.0",
+            "preprocess_counts_to_adata": "v1.2.0",
+            "preprocess_cellbender": "v1.0.1",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.22757930",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-cragg-mouse-sn-rnaseq-striatum/mouse_sc_rnaseq/release/v5.1.0"
+            }
+        },
+        "schlossmacher-mouse-sn-rnaseq-osn-aav-transd": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v4.1.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+            "preprocess_cellranger": "2.0.0",
+            "preprocess_counts_to_adata": "v1.2.0",
+            "preprocess_cellbender": "v1.0.1",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.22757930",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/schlossmacher-mouse-sn-rnaseq-osn-aav-transd/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-schlossmacher-mouse-sn-rnaseq-osn-aav-transd/mouse_sc_rnaseq/release/v5.1.0"
+            }
+        },
+        "alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s": {
+            "workflow": "mouse-sc-rnaseq",
+            "collection_version": "v1.1.0",
+            "workflow_version": "v4.1.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-sc_rnaseq_analysis-v4.1.0",
+            "preprocess_cellranger": "2.0.0",
+            "preprocess_counts_to_adata": "v1.2.0",
+            "preprocess_cellbender": "v1.0.1",
+            "cohort_analysis": "v4.0.0",
+            "collection_version_doi": "10.5281/zenodo.22757930",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-sc-rnaseq-collection-v1/alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s/mouse_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-alessi-mouse-sn-rnaseq-dorsal-striatum-g2019s/mouse_sc_rnaseq/release/v5.1.0"
+            }
+        }
     }
-  }
 }

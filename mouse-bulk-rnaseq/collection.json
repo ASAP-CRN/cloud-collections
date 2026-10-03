@@ -5,25 +5,63 @@
     "types": [
         "mouse-bulk-rnaseq"
     ],
+    "date": "2026-09-30",
+    "doi": "10.5281/zenodo.22758102",
+    "datasets": [
+        "lee-mouse-liver-bulk-rnaseq-g2019s",
+        "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet"
+    ],
+    "teams": [
+        "lee"
+    ],
+    "release": {
+        "version": "v5.1.0",
+        "cde_version": "v4.5",
+        "date": "2026-09-30"
+    },
+    "version": "v1.0.0",
     "versions": {
         "v1.0.0": {
-            "version": "1.0.0",
             "date": "2026-09-30",
             "doi": "10.5281/zenodo.22758102",
             "datasets": [
                 "lee-mouse-liver-bulk-rnaseq-g2019s",
                 "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet"
             ],
-            "teams": [
-                "lee"
-            ],
-            "types": [
-                "mouse-bulk-rnaseq"
-            ],
             "release": {
-                "version": "5.1.0",
+                "version": "v5.1.0",
                 "cde_version": "v4.5",
                 "date": "2026-09-30"
+            }
+        }
+    },
+    "curation": {
+        "lee-mouse-liver-bulk-rnaseq-g2019s": {
+            "workflow": "mouse-bulk-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v3.0.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v3.0.0",
+            "upstream": "1.0.2",
+            "downstream": "v2.0.0",
+            "cohort_analysis": "v2.0.0",
+            "collection_version_doi": "10.5281/zenodo.22758102",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-bulk-rnaseq-collection-v1/lee-mouse-liver-bulk-rnaseq-g2019s/mouse_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-lee-mouse-liver-bulk-rnaseq-g2019s/mouse_bulk_rnaseq/release/v5.1.0"
+            }
+        },
+        "lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet": {
+            "workflow": "mouse-bulk-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v3.0.0",
+            "workflow_url": "github.com/ASAP-CRN/bulk-rnaseq-wf/releases#release-bulk_rnaseq_analysis-v3.0.0",
+            "upstream": "1.0.2",
+            "downstream": "v2.0.0",
+            "cohort_analysis": "v2.0.0",
+            "collection_version_doi": "10.5281/zenodo.22758102",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-mouse-bulk-rnaseq-collection-v1/lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet/mouse_bulk_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-lee-mouse-bulk-rnaseq-striatum-g2019s-hf-diet/mouse_bulk_rnaseq/release/v5.1.0"
             }
         }
     }

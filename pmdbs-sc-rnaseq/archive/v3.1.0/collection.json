@@ -5,8 +5,8 @@
     "types": [
         "pmdbs-sc-rnaseq"
     ],
-    "date": "2025-04-30",
-    "doi": "10.5281/zenodo.20403941",
+    "date": "2025-12-15",
+    "doi": "10.5281/zenodo.17860778",
     "datasets": [
         "hafler-pmdbs-sn-rnaseq-pfc",
         "lee-pmdbs-sn-rnaseq",
@@ -26,11 +26,11 @@
         "sulzer"
     ],
     "release": {
-        "version": "v5.0.0",
-        "cde_version": "v4.4",
-        "date": "2025-06-15"
+        "version": "v4.0.0",
+        "cde_version": "v3.3",
+        "date": "2025-12-15"
     },
-    "version": "v3.1.2",
+    "version": "v3.1.0",
     "versions": {
         "v1.0.0": {
             "date": null,
@@ -99,43 +99,38 @@
                 "cde_version": "v3.3",
                 "date": "2025-12-15"
             }
-        },
-        "v3.1.1": {
-            "date": "2025-04-30",
-            "doi": "10.5281/zenodo.19876217",
-            "datasets": [
-                "hafler-pmdbs-sn-rnaseq-pfc",
-                "lee-pmdbs-sn-rnaseq",
-                "scherzer-pmdbs-sn-rnaseq-mtg",
-                "hardy-pmdbs-sn-rnaseq",
-                "cohort-pmdbs-sc-rnaseq",
-                "jakobsson-pmdbs-sn-rnaseq",
-                "sulzer-pmdbs-sn-rnaseq"
-            ],
-            "release": {
-                "version": "v4.1.0",
-                "cde_version": "v3.3",
-                "date": "2025-04-30"
-            }
-        },
-        "v3.1.2": {
-            "date": "2025-04-30",
-            "doi": "10.5281/zenodo.20403941",
-            "datasets": [
-                "hafler-pmdbs-sn-rnaseq-pfc",
-                "lee-pmdbs-sn-rnaseq",
-                "scherzer-pmdbs-sn-rnaseq-mtg",
-                "hardy-pmdbs-sn-rnaseq",
-                "cohort-pmdbs-sc-rnaseq",
-                "jakobsson-pmdbs-sn-rnaseq",
-                "sulzer-pmdbs-sn-rnaseq"
-            ],
-            "release": {
-                "version": "v5.0.0",
-                "cde_version": "v4.4",
-                "date": "2025-06-15"
-            }
         }
     },
-    "curation": {}
+    "curation": {
+        "cohort-pmdbs-sc-rnaseq": {
+            "workflow": "pmdbs-sc-rnaseq",
+            "collection_version": "v1.0.0",
+            "workflow_version": "v1.1.0_1.0.0_2.1.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-harmonized_pmdbs_analysis-v1.1.0_1.0.0_2.1.0",
+            "preprocess_cellranger": "1.1.0",
+            "preprocess_counts_to_adata": "v1.1.0",
+            "preprocess_cellbender": "v1.0.0",
+            "cohort_analysis": "v2.1.0",
+            "collection_version_doi": "",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-sc-rnaseq-collection-v1/cohort-pmdbs-sc-rnaseq/pmdbs_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-cohort-pmdbs-sc-rnaseq/pmdbs_sc_rnaseq/release/v1.0.0"
+            }
+        },
+        "sulzer-pmdbs-sn-rnaseq": {
+            "workflow": "pmdbs-sc-rnaseq",
+            "collection_version": "v3.1.0",
+            "workflow_version": "v3.1.0",
+            "workflow_url": "github.com/ASAP-CRN/sc-rnaseq-wf/releases#release-harmonized_pmdbs_analysis-v3.1.0",
+            "preprocess_cellranger": "1.1.0",
+            "preprocess_counts_to_adata": "v1.1.0",
+            "preprocess_cellbender": "v1.0.0",
+            "cohort_analysis": "v3.1.0",
+            "collection_version_doi": "10.5281/zenodo.17860778",
+            "gcp_uri": {
+                "collection_bucket": "gs://asap-crn-pmdbs-sc-rnaseq-collection-v1/sulzer-pmdbs-sn-rnaseq/pmdbs_sc_rnaseq",
+                "dataset_bucket": "gs://asap-curated-team-sulzer-pmdbs-sn-rnaseq/pmdbs_sc_rnaseq/release/v4.0.0"
+            }
+        }
+    }
 }
